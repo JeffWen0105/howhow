@@ -2,6 +2,8 @@
 
 ###  執行此程式會寫入 AdCost 事件，並附加廣告成本（亂數） 及廣告來源至指定的神策項目
 
+#### ~~~~ Source Code 打包下載[請點我](https://downgit.github.io/#/home?url=https://github.com/JeffWen0105/howhow/tree/main/Python/SensorsData/adCostMaker) ~~~~
+
 #### 項目目錄說明
 
 ![](https://i.imgur.com/FntC5w6.png)
