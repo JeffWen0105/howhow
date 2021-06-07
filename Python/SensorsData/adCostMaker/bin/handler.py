@@ -69,7 +69,7 @@ class PipeLine():
         logger.debug(f"{self.project} 參數解析中..")
         source = self.config["source"]
         source_list = [
-            i for i in source.split(',')
+            i.strip() for i in source.split(',')
         ]
         if source_list == [""]:
             source_list = ["Yahoo", "Google", "Facebook", "Line"]
