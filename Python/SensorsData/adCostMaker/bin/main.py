@@ -51,7 +51,7 @@ if __name__ == "__main__":
     root_path = os.path.join(
             os.path.abspath(os.path.dirname(__file__)))
     args = argParse()
-    logger.add(f"{root_path}/log/adCostMaker.log", rotation="100 MB",level="INFO")
+    logger.add(f"{root_path}/../log/adCostMaker.log", rotation="100 MB",level="INFO")
     logger.info("程序開始...")
     ad = handler.PipeLine(args.project)
     status = ad.run(args)
