@@ -1,6 +1,6 @@
 # Gimy 劇迷影片網站爬蟲工具
 
-#### Source Code 打包下載[請點我](https://downgit.github.io/#/home?url=https://github.com/JeffWen0105/howhow/tree/main/Python/Crawler/Gimy)
+#### ~~~~ Source Code 打包下載[請點我](https://downgit.github.io/#/home?url=https://github.com/JeffWen0105/howhow/tree/main/Python/Crawler/Gimy) ~~~~
 
 ### 透過此工具可以將有[Gimy 劇迷](https://gimy.one/)上動漫等多個影片源下載為json檔，供後續線上播放使用
 
