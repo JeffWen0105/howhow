@@ -1,0 +1,256 @@
+2021-06-10 21:37:07.444 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:37:07.447 | ERROR    | handler:run:134 - An error has been caught in function 'run', process 'MainProcess' (71218), thread 'MainThread' (4568878592):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 49, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7f95eb0d10d0>
+                      └ <handler.PipeLine object at 0x7f95eb0d3130>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 134, in run
+    self.conf_parser()
+    │    └ <function PipeLine.conf_parser at 0x7f95eb0ce670>
+    └ <handler.PipeLine object at 0x7f95eb0d3130>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 70, in conf_parser
+    logger.debug(f"{self.project} 參數解析中..")
+    │      └ <function Logger.debug at 0x7f95ea3e7670>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='/Users/jeffwen/Documents/GitHub/howhow/Pytho...
+
+AttributeError: 'PipeLine' object has no attribute 'project'
+2021-06-10 21:37:07.458 | CRITICAL | deleter:get_data:100 - ERR : Failed to parse: http://example.tw:8107                           # 神策網址（必填）EX. http://sensorsdata.com.tw:8107/api/sql/query
+2021-06-10 21:37:07.458 | ERROR    | deleter:pipline:81 - An error has been caught in function 'pipline', process 'MainProcess' (71218), thread 'MainThread' (4568878592):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 49, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7f95eb0d10d0>
+                      └ <handler.PipeLine object at 0x7f95eb0d3130>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7f95eb0cd790>
+    └ <deleter.SaDeleter object at 0x7f95eb0c6ee0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 81, in pipline
+    self.delect_data()
+    │    └ <function SaDeleter.delect_data at 0x7f95eb0cdf70>
+    └ <deleter.SaDeleter object at 0x7f95eb0c6ee0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 105, in delect_data
+    for _ in range(0,len(self.rawdata)):
+                         └ <deleter.SaDeleter object at 0x7f95eb0c6ee0>
+
+AttributeError: 'SaDeleter' object has no attribute 'rawdata'
+2021-06-10 21:37:07.461 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default                                         # 項目（必填）EX. default項目查看
+2021-06-10 21:37:56.337 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:37:56.339 | ERROR    | handler:run:134 - An error has been caught in function 'run', process 'MainProcess' (71249), thread 'MainThread' (4617498112):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 49, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7f83940aa0d0>
+                      └ <handler.PipeLine object at 0x7f83940ac1f0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 134, in run
+    self.conf_parser()
+    │    └ <function PipeLine.conf_parser at 0x7f83940a7670>
+    └ <handler.PipeLine object at 0x7f83940ac1f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 70, in conf_parser
+    logger.debug(f"{self.project} 參數解析中..")
+    │      └ <function Logger.debug at 0x7f8393bd0670>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='/Users/jeffwen/Documents/GitHub/howhow/Pytho...
+
+AttributeError: 'PipeLine' object has no attribute 'project'
+2021-06-10 21:37:56.351 | CRITICAL | deleter:get_data:100 - ERR : Failed to parse: http://example.tw:8107                           # 神策網址（必填）EX. http://sensorsdata.com.tw:8107/api/sql/query
+2021-06-10 21:37:56.352 | ERROR    | deleter:pipline:81 - An error has been caught in function 'pipline', process 'MainProcess' (71249), thread 'MainThread' (4617498112):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 49, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7f83940aa0d0>
+                      └ <handler.PipeLine object at 0x7f83940ac1f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7f83940a6790>
+    └ <deleter.SaDeleter object at 0x7f839409fee0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 81, in pipline
+    self.delete_data()
+    │    └ <function SaDeleter.delete_data at 0x7f83940a6f70>
+    └ <deleter.SaDeleter object at 0x7f839409fee0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 105, in delete_data
+    for _ in range(0,len(self.rawdata)):
+                         └ <deleter.SaDeleter object at 0x7f839409fee0>
+
+AttributeError: 'SaDeleter' object has no attribute 'rawdata'
+2021-06-10 21:37:56.354 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default                                         # 項目（必填）EX. default項目查看
+2021-06-10 21:39:07.218 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:39:07.221 | ERROR    | handler:run:134 - An error has been caught in function 'run', process 'MainProcess' (71282), thread 'MainThread' (4674731520):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 49, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7fa398815160>
+                      └ <handler.PipeLine object at 0x7fa398890130>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 134, in run
+    self.conf_parser()
+    │    └ <function PipeLine.conf_parser at 0x7fa39888f700>
+    └ <handler.PipeLine object at 0x7fa398890130>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 70, in conf_parser
+    logger.debug(f"{self.project} 參數解析中..")
+    │      └ <function Logger.debug at 0x7fa3983d0670>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='/Users/jeffwen/Documents/GitHub/howhow/Pytho...
+
+AttributeError: 'PipeLine' object has no attribute 'project'
+2021-06-10 21:39:40.800 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:39:40.802 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where age >= 30  and age <= 50                      # 設定要刪除使用者 EX. 如不設條件請為空，此範例為 刪除年紀大於等於 30 且小於等於 50 之間的使用者
+2021-06-10 21:39:40.802 | CRITICAL | handler:conf_parser:85 - ERR , limit 請輸入數字 -> invalid literal for int() with base 10: '50000                                             # 最多刪除多少筆數據，囿於避免大量併發，每次執行最多只會刪除 50 萬筆數據。'
+2021-06-10 21:40:04.131 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:40:04.132 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where age >= 30  and age <= 50
+2021-06-10 21:41:26.748 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:41:26.750 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where age >= 30  and age <= 50
+2021-06-10 21:41:27.090 | ERROR    | deleter:delete_data:119 - 無此條件，請重新設定
+2021-06-10 21:41:27.091 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:42:19.198 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:42:19.201 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:42:19.521 | ERROR    | deleter:delete_data:119 - 無此條件，請重新設定
+2021-06-10 21:42:19.522 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:44:21.856 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:44:21.859 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:44:22.250 | ERROR    | deleter:delete_data:119 - 無此條件，請重新設定
+2021-06-10 21:44:22.250 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:44:48.947 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:44:48.949 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:44:49.264 | ERROR    | deleter:delete_data:119 - 無此條件，請重新設定
+2021-06-10 21:44:49.264 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:45:07.579 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:45:07.581 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:45:07.892 | ERROR    | deleter:delete_data:119 - 無此條件，請重新設定
+2021-06-10 21:45:07.893 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:47:14.935 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:47:14.937 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:47:15.172 | ERROR    | deleter:delete_data:119 - 無此條件，請重新設定
+2021-06-10 21:47:15.173 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:48:08.927 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:48:08.929 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:48:09.196 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-10 21:48:09.196 | ERROR    | handler:get_token:101 - An error has been caught in function 'get_token', process 'MainProcess' (71587), thread 'MainThread' (4679495168):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 49, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7fbdc00a6f70>
+                      └ <handler.PipeLine object at 0x7fbdc00ab130>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 139, in run
+    sad.token = self.get_token()
+    │   │       │    └ <function PipeLine.get_token at 0x7fbdc00a68b0>
+    │   │       └ <handler.PipeLine object at 0x7fbdc00ab130>
+    │   └ <property object at 0x7fbdc00579a0>
+    └ <deleter.SaDeleter object at 0x7fbdc00ab310>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 101, in get_token
+    token = self.request(params, uri, data)
+            │    │       │       │    └ {'account_name': 'newdemo', 'password': '1qaz!QAZ'}
+            │    │       │       └ '/api/v2/auth/login'
+            │    │       └ {'project': 'default', 'is_global': 'true'}
+            │    └ <function PipeLine.request at 0x7fbdc00a6c10>
+            └ <handler.PipeLine object at 0x7fbdc00ab130>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 120, in request
+    logger.debug(f"Token 為： {response.text['session_id']}")
+    │      └ <function Logger.debug at 0x7fbdbfbd0670>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='/Users/jeffwen/Documents/GitHub/howhow/Pytho...
+
+TypeError: string indices must be integers
+2021-06-10 21:48:09.422 | ERROR    | deleter:delete_data:119 - 無此條件，請重新設定
+2021-06-10 21:48:09.422 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:49:01.806 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:49:01.808 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:49:02.026 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-10 21:49:02.026 | ERROR    | handler:get_token:101 - An error has been caught in function 'get_token', process 'MainProcess' (71612), thread 'MainThread' (4547395072):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 49, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7f94ef0a6f70>
+                      └ <handler.PipeLine object at 0x7f94ef0ab1f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 139, in run
+    sad.token = self.get_token()
+    │   │       │    └ <function PipeLine.get_token at 0x7f94ef0a68b0>
+    │   │       └ <handler.PipeLine object at 0x7f94ef0ab1f0>
+    │   └ <property object at 0x7f94ef0579f0>
+    └ <deleter.SaDeleter object at 0x7f94ef0ab310>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 101, in get_token
+    token = self.request(params, uri, data)
+            │    │       │       │    └ {'account_name': 'newdemo', 'password': '1qaz!QAZ'}
+            │    │       │       └ '/api/v2/auth/login'
+            │    │       └ {'project': 'default', 'is_global': 'true'}
+            │    └ <function PipeLine.request at 0x7f94ef0a6c10>
+            └ <handler.PipeLine object at 0x7f94ef0ab1f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 121, in request
+    return response.text["session_id"]
+           │        └ <property object at 0x7f94eefe6f90>
+           └ <Response [200]>
+
+TypeError: string indices must be integers
+2021-06-10 21:49:02.228 | ERROR    | deleter:delete_data:119 - 無此條件，請重新設定
+2021-06-10 21:49:02.228 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:50:09.865 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:50:09.867 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:50:10.127 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-10 21:50:10.128 | ERROR    | handler:get_token:101 - An error has been caught in function 'get_token', process 'MainProcess' (71635), thread 'MainThread' (4751769088):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 49, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7f91f60afee0>
+                      └ <handler.PipeLine object at 0x7f91f60b41f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 139, in run
+    sad.token = self.get_token()
+    │   │       │    └ <function PipeLine.get_token at 0x7f91f60af820>
+    │   │       └ <handler.PipeLine object at 0x7f91f60b41f0>
+    │   └ <property object at 0x7f91f60609f0>
+    └ <deleter.SaDeleter object at 0x7f91f60b4310>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 101, in get_token
+    token = self.request(params, uri, data)
+            │    │       │       │    └ {'account_name': 'newdemo', 'password': '1qaz!QAZ'}
+            │    │       │       └ '/api/v2/auth/login'
+            │    │       └ {'project': 'default', 'is_global': 'true'}
+            │    └ <function PipeLine.request at 0x7f91f60afb80>
+            └ <handler.PipeLine object at 0x7f91f60b41f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 119, in request
+    token = json.loads(token)["session_id"]
+            │    └ <function loads at 0x7f91f43da160>
+            └ <module 'json' from '/opt/anaconda3/lib/python3.8/json/__init__.py'>
+
+UnboundLocalError: local variable 'token' referenced before assignment
+2021-06-10 21:50:10.373 | ERROR    | deleter:delete_data:119 - 無此條件，請重新設定
+2021-06-10 21:50:10.373 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:50:47.557 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:50:47.559 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:50:47.784 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-10 21:50:48.005 | ERROR    | deleter:delete_data:119 - 無此條件，請重新設定
+2021-06-10 21:50:48.006 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:52:02.815 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:52:02.817 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:52:03.053 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-10 21:52:03.296 | ERROR    | deleter:delete_data:120 - 無此條件，請重新設定
+2021-06-10 21:52:03.296 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-10 21:52:55.248 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-10 21:52:55.250 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-10 21:52:55.463 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-10 21:52:55.679 | ERROR    | deleter:delete_data:120 - 無此條件，請重新設定
+2021-06-10 21:52:55.680 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看

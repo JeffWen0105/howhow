@@ -1,0 +1,799 @@
+2021-06-11 15:50:31.371 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-11 15:50:31.374 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-11 15:50:31.559 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 15:50:31.722 | ERROR    | deleter:delete_data:125 - 無此條件，請重新設定
+2021-06-11 15:50:31.722 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-11 15:51:02.896 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-11 15:51:02.899 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '警察'
+2021-06-11 15:51:03.124 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 15:51:32.049 | SUCCESS  | deleter:delete_data:121 - 總計刪除{x}筆資料
+2021-06-11 15:51:32.051 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-11 15:52:00.031 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-11 15:52:00.032 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 15:52:00.220 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 15:52:00.545 | ERROR    | deleter:delete_data:124 - 無此條件，請重新設定
+2021-06-11 15:52:00.545 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-11 15:52:03.262 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-11 15:52:03.263 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 15:52:03.448 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 15:52:03.772 | ERROR    | deleter:delete_data:124 - 無此條件，請重新設定
+2021-06-11 15:52:03.773 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-11 15:52:53.138 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-11 15:52:53.140 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 15:52:53.337 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 15:52:53.690 | ERROR    | deleter:delete_data:124 - 無此條件，請重新設定
+2021-06-11 15:52:53.691 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-11 15:53:35.193 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-11 15:53:35.195 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 15:53:35.388 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 15:53:35.731 | ERROR    | deleter:delete_data:125 - 無此條件，請重新設定
+2021-06-11 15:53:35.732 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-11 15:53:44.765 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-11 15:53:44.767 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 15:53:44.964 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 15:53:45.303 | ERROR    | deleter:delete_data:125 - 無此條件，請重新設定
+2021-06-11 15:53:45.304 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-11 15:54:18.342 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-11 15:54:18.345 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 15:54:18.544 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 15:54:19.064 | SUCCESS  | deleter:delete_data:122 - 總計刪除2筆資料
+2021-06-11 15:54:19.065 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-11 15:54:36.230 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-11 15:54:36.232 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 15:54:36.427 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 15:54:36.953 | SUCCESS  | deleter:delete_data:122 - 總計刪除1筆資料
+2021-06-11 15:54:36.953 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-11 15:54:39.972 | INFO     | __main__:<module>:47 - 程序開始...
+2021-06-11 15:54:39.974 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 15:54:40.148 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 15:54:40.634 | SUCCESS  | deleter:delete_data:122 - 總計刪除1筆資料
+2021-06-11 15:54:40.635 | SUCCESS  | __main__:<module>:51 - 程序結束，請至神策數據的default項目查看
+2021-06-11 16:03:19.392 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 16:03:19.395 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 16:03:19.585 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 16:03:20.053 | SUCCESS  | deleter:delete_data:121 - 總計刪除1筆資料
+2021-06-11 16:03:20.054 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:09:51.604 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:09:51.608 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:09:51.803 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:09:52.269 | SUCCESS  | deleter:delete_data:121 - 總計刪除1筆資料
+2021-06-11 17:09:52.269 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:16:47.831 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:16:47.835 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:16:49.919 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:16:50.219 | SUCCESS  | deleter:delete_data:123 - 總計刪除1筆資料
+2021-06-11 17:16:50.425 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:41:51.297 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:41:51.300 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:41:51.481 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:41:51.483 | ERROR    | deleter:pipline:79 - An error has been caught in function 'pipline', process 'MainProcess' (79988), thread 'MainThread' (4696370688):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7ff4eb7c4430>
+                      └ <handler.PipeLine object at 0x7ff4eb7c90a0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 140, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7ff4eb7c2af0>
+    └ <deleter.SaDeleter object at 0x7ff4eb7c91c0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 79, in pipline
+    self.init_sa()
+    │    └ <function SaDeleter.init_sa at 0x7ff4eb7c2c10>
+    └ <deleter.SaDeleter object at 0x7ff4eb7c91c0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 90, in init_sa
+    self.sa = sensorsanalytics.SensorsAnalytics(consumer)
+    │         │                └ <class 'formatImporter.sensorsanalytics.sdk.SensorsAnalytics'>
+    │         └ <module 'formatImporter.sensorsanalytics' from '/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/for...
+    └ <deleter.SaDeleter object at 0x7ff4eb7c91c0>
+
+NameError: name 'consumer' is not defined
+2021-06-11 17:41:51.812 | ERROR    | deleter:pipline:81 - An error has been caught in function 'pipline', process 'MainProcess' (79988), thread 'MainThread' (4696370688):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7ff4eb7c4430>
+                      └ <handler.PipeLine object at 0x7ff4eb7c90a0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 140, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7ff4eb7c2af0>
+    └ <deleter.SaDeleter object at 0x7ff4eb7c91c0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 81, in pipline
+    self.delete_data()
+    │    └ <function SaDeleter.delete_data at 0x7ff4eb7ba310>
+    └ <deleter.SaDeleter object at 0x7ff4eb7c91c0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 122, in delete_data
+    self.sa.profile_delete(_)
+    │                      └ '46fb09b3415b9482'
+    └ <deleter.SaDeleter object at 0x7ff4eb7c91c0>
+
+AttributeError: 'SaDeleter' object has no attribute 'sa'
+2021-06-11 17:41:51.817 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:42:09.034 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:42:09.036 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:42:09.225 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:42:09.575 | SUCCESS  | deleter:delete_data:124 - 總計刪除1筆資料
+2021-06-11 17:42:12.449 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:42:31.889 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:42:31.891 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:42:31.891 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:42:32.131 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:42:32.487 | SUCCESS  | deleter:delete_data:124 - 總計刪除120筆資料
+2021-06-11 17:42:32.873 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:42:40.074 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:42:40.076 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:42:40.076 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:42:40.395 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:42:40.745 | SUCCESS  | deleter:delete_data:124 - 總計刪除119筆資料
+2021-06-11 17:42:41.064 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:42:52.105 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:42:52.108 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:42:52.108 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:42:52.379 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:42:52.698 | SUCCESS  | deleter:delete_data:124 - 總計刪除119筆資料
+2021-06-11 17:42:52.989 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:42:57.088 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:42:57.089 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:42:57.089 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:42:57.285 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:42:57.597 | SUCCESS  | deleter:delete_data:124 - 總計刪除80筆資料
+2021-06-11 17:42:57.904 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:42:58.846 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:42:58.847 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:42:58.848 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:42:59.023 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:42:59.364 | SUCCESS  | deleter:delete_data:124 - 總計刪除80筆資料
+2021-06-11 17:42:59.661 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:43:00.439 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:43:00.440 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:43:00.440 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:43:00.620 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:43:00.919 | SUCCESS  | deleter:delete_data:124 - 總計刪除80筆資料
+2021-06-11 17:43:01.287 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:43:02.208 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:43:02.210 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:43:02.210 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:43:02.404 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:43:02.726 | SUCCESS  | deleter:delete_data:124 - 總計刪除80筆資料
+2021-06-11 17:43:03.108 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:43:04.035 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:43:04.036 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:43:04.036 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:43:04.259 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:43:04.562 | SUCCESS  | deleter:delete_data:124 - 總計刪除80筆資料
+2021-06-11 17:43:04.882 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:43:05.836 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:43:05.837 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:43:05.838 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:43:06.015 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:43:06.310 | SUCCESS  | deleter:delete_data:124 - 總計刪除80筆資料
+2021-06-11 17:43:06.618 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:43:07.511 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:43:07.513 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:where job = '老師'
+2021-06-11 17:43:07.513 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:43:07.686 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:43:07.956 | ERROR    | deleter:delete_data:127 - 無此條件，請重新設定
+2021-06-11 17:43:10.690 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:43:24.644 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:43:24.646 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:43:24.819 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:43:25.185 | SUCCESS  | deleter:delete_data:124 - 總計刪除726筆資料
+2021-06-11 17:43:26.695 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:43:42.852 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:43:42.853 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:43:43.035 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:43:43.454 | SUCCESS  | deleter:delete_data:124 - 總計刪除726筆資料
+2021-06-11 17:43:44.820 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:43:55.866 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:43:55.868 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:43:56.058 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:43:56.563 | SUCCESS  | deleter:delete_data:124 - 總計刪除726筆資料
+2021-06-11 17:43:58.028 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:43:59.445 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:43:59.447 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:43:59.618 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:43:59.969 | SUCCESS  | deleter:delete_data:124 - 總計刪除477筆資料
+2021-06-11 17:44:00.849 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:44:03.799 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:44:03.800 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:44:03.971 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:44:04.342 | SUCCESS  | deleter:delete_data:124 - 總計刪除477筆資料
+2021-06-11 17:44:05.247 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:44:07.280 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:44:07.281 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:44:07.484 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:44:07.865 | SUCCESS  | deleter:delete_data:124 - 總計刪除477筆資料
+2021-06-11 17:44:08.847 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 17:44:14.915 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 17:44:14.916 | WARNING  | handler:conf_parser:80 - 一次最多只能刪除50萬筆..
+2021-06-11 17:44:15.090 | SUCCESS  | handler:request:118 - INFO  取得數據成功
+2021-06-11 17:44:15.428 | ERROR    | deleter:delete_data:127 - 無此條件，請重新設定
+2021-06-11 17:44:18.095 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:12:39.949 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:12:39.951 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '無職'
+2021-06-11 18:12:39.952 | WARNING  | handler:conf_parser:81 - 一次最多只能刪除50萬筆..
+2021-06-11 18:12:40.201 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:12:40.202 | ERROR    | deleter:pipline:80 - An error has been caught in function 'pipline', process 'MainProcess' (80582), thread 'MainThread' (4674260480):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7fad078e6790>
+                      └ <handler.PipeLine object at 0x7fad078e7340>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7fad078e4af0>
+    └ <deleter.SaDeleter object at 0x7fad078e74c0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 80, in pipline
+    self.init_sa()
+    │    └ <function SaDeleter.init_sa at 0x7fad078e4c10>
+    └ <deleter.SaDeleter object at 0x7fad078e74c0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 90, in init_sa
+    consumer = sensorsanalytics.ConcurrentLoggingConsumer(
+               │                └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer'>
+               └ <module 'formatImporter.sensorsanalytics' from '/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/for...
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/formatImporter/sensorsanalytics/sdk.py", line 947, in __init__
+    self._writer = ConcurrentLoggingConsumer.ConcurrentFileWriter(filename)
+    │              │                         │                    └ '../tmp/data.log.2021-06-11'
+    │              │                         └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer.ConcurrentFileWriter'>
+    │              └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer'>
+    └ <formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer object at 0x7fad034a75b0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/formatImporter/sensorsanalytics/sdk.py", line 918, in __init__
+    self._file = open(filename, 'a')
+    │                 └ '../tmp/data.log.2021-06-11'
+    └ <formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer.ConcurrentFileWriter object at 0x7fad078e7820>
+
+FileNotFoundError: [Errno 2] No such file or directory: '../tmp/data.log.2021-06-11'
+2021-06-11 18:12:42.458 | ERROR    | deleter:pipline:82 - An error has been caught in function 'pipline', process 'MainProcess' (80582), thread 'MainThread' (4674260480):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7fad078e6790>
+                      └ <handler.PipeLine object at 0x7fad078e7340>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7fad078e4af0>
+    └ <deleter.SaDeleter object at 0x7fad078e74c0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 82, in pipline
+    self.delete_data()
+    │    └ <function SaDeleter.delete_data at 0x7fad078dd310>
+    └ <deleter.SaDeleter object at 0x7fad078e74c0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 125, in delete_data
+    self.sa.profile_delete(_)
+    │                      └ '5809866bd21c1eb1'
+    └ <deleter.SaDeleter object at 0x7fad078e74c0>
+
+AttributeError: 'SaDeleter' object has no attribute 'sa'
+2021-06-11 18:12:42.463 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:13:04.979 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:13:04.981 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '無職'
+2021-06-11 18:13:04.981 | WARNING  | handler:conf_parser:81 - 一次最多只能刪除50萬筆..
+2021-06-11 18:13:05.161 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:13:05.162 | ERROR    | deleter:pipline:80 - An error has been caught in function 'pipline', process 'MainProcess' (80609), thread 'MainThread' (4700294656):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7f8b998bf790>
+                      └ <handler.PipeLine object at 0x7f8b998c0340>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7f8b998bdaf0>
+    └ <deleter.SaDeleter object at 0x7f8b998c04c0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 80, in pipline
+    self.init_sa()
+    │    └ <function SaDeleter.init_sa at 0x7f8b998bdc10>
+    └ <deleter.SaDeleter object at 0x7f8b998c04c0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 90, in init_sa
+    consumer = sensorsanalytics.ConcurrentLoggingConsumer(
+               │                └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer'>
+               └ <module 'formatImporter.sensorsanalytics' from '/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/for...
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/formatImporter/sensorsanalytics/sdk.py", line 947, in __init__
+    self._writer = ConcurrentLoggingConsumer.ConcurrentFileWriter(filename)
+    │              │                         │                    └ '../tmp/data.log.2021-06-11'
+    │              │                         └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer.ConcurrentFileWriter'>
+    │              └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer'>
+    └ <formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer object at 0x7f8b965a75b0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/formatImporter/sensorsanalytics/sdk.py", line 918, in __init__
+    self._file = open(filename, 'a')
+    │                 └ '../tmp/data.log.2021-06-11'
+    └ <formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer.ConcurrentFileWriter object at 0x7f8b998c0820>
+
+FileNotFoundError: [Errno 2] No such file or directory: '../tmp/data.log.2021-06-11'
+2021-06-11 18:13:06.375 | ERROR    | deleter:pipline:82 - An error has been caught in function 'pipline', process 'MainProcess' (80609), thread 'MainThread' (4700294656):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7f8b998bf790>
+                      └ <handler.PipeLine object at 0x7f8b998c0340>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7f8b998bdaf0>
+    └ <deleter.SaDeleter object at 0x7f8b998c04c0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 82, in pipline
+    self.delete_data()
+    │    └ <function SaDeleter.delete_data at 0x7f8b998b6310>
+    └ <deleter.SaDeleter object at 0x7f8b998c04c0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 125, in delete_data
+    self.sa.profile_delete(_)
+    │                      └ '5809866bd21c1eb1'
+    └ <deleter.SaDeleter object at 0x7f8b998c04c0>
+
+AttributeError: 'SaDeleter' object has no attribute 'sa'
+2021-06-11 18:13:06.379 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:13:34.123 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:13:34.125 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '無職'
+2021-06-11 18:13:34.126 | WARNING  | handler:conf_parser:81 - 一次最多只能刪除50萬筆..
+2021-06-11 18:13:34.298 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:13:34.299 | ERROR    | deleter:pipline:80 - An error has been caught in function 'pipline', process 'MainProcess' (80639), thread 'MainThread' (4628819456):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7fb323fc8790>
+                      └ <handler.PipeLine object at 0x7fb323fca370>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7fb323fc6af0>
+    └ <deleter.SaDeleter object at 0x7fb323fca4f0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 80, in pipline
+    self.init_sa()
+    │    └ <function SaDeleter.init_sa at 0x7fb323fc6c10>
+    └ <deleter.SaDeleter object at 0x7fb323fca4f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 90, in init_sa
+    consumer = sensorsanalytics.ConcurrentLoggingConsumer(
+               │                └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer'>
+               └ <module 'formatImporter.sensorsanalytics' from '/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/for...
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/formatImporter/sensorsanalytics/sdk.py", line 947, in __init__
+    self._writer = ConcurrentLoggingConsumer.ConcurrentFileWriter(filename)
+    │              │                         │                    └ '../tmp/data.log.2021-06-11'
+    │              │                         └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer.ConcurrentFileWriter'>
+    │              └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer'>
+    └ <formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer object at 0x7fb320a9d5b0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/formatImporter/sensorsanalytics/sdk.py", line 918, in __init__
+    self._file = open(filename, 'a')
+    │                 └ '../tmp/data.log.2021-06-11'
+    └ <formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer.ConcurrentFileWriter object at 0x7fb323fca850>
+
+FileNotFoundError: [Errno 2] No such file or directory: '../tmp/data.log.2021-06-11'
+2021-06-11 18:13:35.817 | ERROR    | deleter:pipline:82 - An error has been caught in function 'pipline', process 'MainProcess' (80639), thread 'MainThread' (4628819456):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7fb323fc8790>
+                      └ <handler.PipeLine object at 0x7fb323fca370>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7fb323fc6af0>
+    └ <deleter.SaDeleter object at 0x7fb323fca4f0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 82, in pipline
+    self.delete_data()
+    │    └ <function SaDeleter.delete_data at 0x7fb323fbf310>
+    └ <deleter.SaDeleter object at 0x7fb323fca4f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 124, in delete_data
+    self.sa.profile_delete(_)
+    │                      └ '7afa2eb0bdfac1da'
+    └ <deleter.SaDeleter object at 0x7fb323fca4f0>
+
+AttributeError: 'SaDeleter' object has no attribute 'sa'
+2021-06-11 18:13:35.821 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:19:13.493 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:19:13.496 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '無職'
+2021-06-11 18:19:13.497 | WARNING  | handler:conf_parser:81 - 一次最多只能刪除50萬筆..
+2021-06-11 18:19:13.694 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:19:13.695 | ERROR    | deleter:pipline:80 - An error has been caught in function 'pipline', process 'MainProcess' (80674), thread 'MainThread' (4522667520):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7fa0e20e6790>
+                      └ <handler.PipeLine object at 0x7fa0e20e7370>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7fa0e20e4af0>
+    └ <deleter.SaDeleter object at 0x7fa0e20e74f0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 80, in pipline
+    self.init_sa()
+    │    └ <function SaDeleter.init_sa at 0x7fa0e20e4c10>
+    └ <deleter.SaDeleter object at 0x7fa0e20e74f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 89, in init_sa
+    consumer = sensorsanalytics.ConcurrentLoggingConsumer(
+               │                └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer'>
+               └ <module 'formatImporter.sensorsanalytics' from '/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/for...
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/formatImporter/sensorsanalytics/sdk.py", line 947, in __init__
+    self._writer = ConcurrentLoggingConsumer.ConcurrentFileWriter(filename)
+    │              │                         │                    └ '../tmp/data.log.2021-06-11'
+    │              │                         └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer.ConcurrentFileWriter'>
+    │              └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer'>
+    └ <formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer object at 0x7fa0deba75b0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/formatImporter/sensorsanalytics/sdk.py", line 918, in __init__
+    self._file = open(filename, 'a')
+    │                 └ '../tmp/data.log.2021-06-11'
+    └ <formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer.ConcurrentFileWriter object at 0x7fa0e20e7850>
+
+FileNotFoundError: [Errno 2] No such file or directory: '../tmp/data.log.2021-06-11'
+2021-06-11 18:19:14.973 | ERROR    | deleter:pipline:82 - An error has been caught in function 'pipline', process 'MainProcess' (80674), thread 'MainThread' (4522667520):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7fa0e20e6790>
+                      └ <handler.PipeLine object at 0x7fa0e20e7370>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7fa0e20e4af0>
+    └ <deleter.SaDeleter object at 0x7fa0e20e74f0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 82, in pipline
+    self.delete_data()
+    │    └ <function SaDeleter.delete_data at 0x7fa0e20dd310>
+    └ <deleter.SaDeleter object at 0x7fa0e20e74f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 123, in delete_data
+    self.sa.profile_delete(_)
+    │                      └ '7afa2eb0bdfac1da'
+    └ <deleter.SaDeleter object at 0x7fa0e20e74f0>
+
+AttributeError: 'SaDeleter' object has no attribute 'sa'
+2021-06-11 18:19:14.976 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:20:03.105 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:20:03.108 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '無職'
+2021-06-11 18:20:03.108 | WARNING  | handler:conf_parser:81 - 一次最多只能刪除50萬筆..
+2021-06-11 18:20:03.282 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:20:03.282 | ERROR    | deleter:pipline:80 - An error has been caught in function 'pipline', process 'MainProcess' (80685), thread 'MainThread' (4675649024):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7fde8b8e6790>
+                      └ <handler.PipeLine object at 0x7fde8b8e7370>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7fde8b8e4af0>
+    └ <deleter.SaDeleter object at 0x7fde8b8e74f0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 80, in pipline
+    self.init_sa()
+    │    └ <function SaDeleter.init_sa at 0x7fde8b8e4c10>
+    └ <deleter.SaDeleter object at 0x7fde8b8e74f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 89, in init_sa
+    consumer = sensorsanalytics.ConcurrentLoggingConsumer(
+               │                └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer'>
+               └ <module 'formatImporter.sensorsanalytics' from '/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/for...
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/formatImporter/sensorsanalytics/sdk.py", line 947, in __init__
+    self._writer = ConcurrentLoggingConsumer.ConcurrentFileWriter(filename)
+    │              │                         │                    └ '../tmp/data.log.2021-06-11'
+    │              │                         └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer.ConcurrentFileWriter'>
+    │              └ <class 'formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer'>
+    └ <formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer object at 0x7fde87ba75b0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/formatImporter/sensorsanalytics/sdk.py", line 918, in __init__
+    self._file = open(filename, 'a')
+    │                 └ '../tmp/data.log.2021-06-11'
+    └ <formatImporter.sensorsanalytics.sdk.ConcurrentLoggingConsumer.ConcurrentFileWriter object at 0x7fde8b8e7850>
+
+FileNotFoundError: [Errno 2] No such file or directory: '../tmp/data.log.2021-06-11'
+2021-06-11 18:20:04.427 | ERROR    | deleter:pipline:82 - An error has been caught in function 'pipline', process 'MainProcess' (80685), thread 'MainThread' (4675649024):
+Traceback (most recent call last):
+
+  File "bin/main.py", line 48, in <module>
+    status, project = sdd.run()
+                      │   └ <function PipeLine.run at 0x7fde8b8e6790>
+                      └ <handler.PipeLine object at 0x7fde8b8e7370>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/handler.py", line 141, in run
+    sad.pipline()
+    │   └ <function SaDeleter.pipline at 0x7fde8b8e4af0>
+    └ <deleter.SaDeleter object at 0x7fde8b8e74f0>
+
+> File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 82, in pipline
+    self.delete_data()
+    │    └ <function SaDeleter.delete_data at 0x7fde8b8dd310>
+    └ <deleter.SaDeleter object at 0x7fde8b8e74f0>
+
+  File "/Users/jeffwen/Documents/GitHub/howhow/Python/SensorsData/UserDeleter/bin/deleter.py", line 123, in delete_data
+    self.sa.profile_delete(_)
+    │                      └ '5809866bd21c1eb1'
+    └ <deleter.SaDeleter object at 0x7fde8b8e74f0>
+
+AttributeError: 'SaDeleter' object has no attribute 'sa'
+2021-06-11 18:20:04.433 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:28:00.325 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:28:00.330 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '無職'
+2021-06-11 18:28:00.330 | WARNING  | handler:conf_parser:81 - 一次最多只能刪除50萬筆..
+2021-06-11 18:28:00.509 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:28:04.392 | SUCCESS  | deleter:delete_data:125 - 總計刪除45209筆資料
+2021-06-11 18:28:04.396 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:30:02.951 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:30:02.953 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '無職'
+2021-06-11 18:30:02.953 | WARNING  | handler:conf_parser:81 - 一次最多只能刪除50萬筆..
+2021-06-11 18:30:03.184 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:30:06.858 | SUCCESS  | deleter:delete_data:126 - 總計刪除45209筆資料
+2021-06-11 18:30:06.866 | WARNING  | deleter:format_importer:146 - ERR : 写入失败... 
+2021-06-11 18:30:06.869 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:30:29.873 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:30:29.875 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '無職'
+2021-06-11 18:30:29.875 | WARNING  | handler:conf_parser:81 - 一次最多只能刪除50萬筆..
+2021-06-11 18:30:30.071 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:30:34.112 | SUCCESS  | deleter:delete_data:126 - 總計刪除45209筆資料
+2021-06-11 18:30:34.119 | WARNING  | deleter:format_importer:146 - ERR : 写入失败... 
+2021-06-11 18:30:34.122 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:32:08.013 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:32:08.016 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '無職'
+2021-06-11 18:32:08.016 | WARNING  | handler:conf_parser:81 - 一次最多只能刪除50萬筆..
+2021-06-11 18:32:08.197 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:32:11.926 | SUCCESS  | deleter:delete_data:126 - 總計刪除45209筆資料
+2021-06-11 18:32:12.967 | WARNING  | deleter:format_importer:146 - ERR : 写入失败... 
+2021-06-11 18:32:12.970 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:32:55.927 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:32:55.930 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '無職'
+2021-06-11 18:32:55.930 | WARNING  | handler:conf_parser:81 - 一次最多只能刪除50萬筆..
+2021-06-11 18:32:56.251 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:33:00.534 | SUCCESS  | deleter:delete_data:126 - 總計刪除45209筆資料
+2021-06-11 18:33:00.790 | WARNING  | deleter:format_importer:146 - ERR : 写入失败... 
+2021-06-11 18:33:00.793 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:47:55.872 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:47:55.876 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '老師'
+2021-06-11 18:47:56.056 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:47:56.881 | SUCCESS  | deleter:delete_data:125 - 總計刪除5000筆資料
+2021-06-11 18:47:56.892 | WARNING  | deleter:format_importer:142 - ERR : {_} 
+2021-06-11 18:47:56.892 | WARNING  | deleter:format_importer:152 - ERR : 写入失败... 
+2021-06-11 18:47:56.893 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:48:23.911 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:48:23.914 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '老師'
+2021-06-11 18:48:24.086 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:48:24.882 | SUCCESS  | deleter:delete_data:125 - 總計刪除5000筆資料
+2021-06-11 18:48:42.489 | WARNING  | deleter:format_importer:142 - ERR : {_} 
+2021-06-11 18:48:42.489 | SUCCESS  | deleter:format_importer:144 - 写入成功...
+2021-06-11 18:48:42.515 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:50:33.591 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:50:33.595 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '老師'
+2021-06-11 18:50:33.778 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:50:34.552 | SUCCESS  | deleter:delete_data:126 - 總計刪除5000筆資料
+2021-06-11 18:50:51.215 | WARNING  | deleter:format_importer:143 - ERR : {_} 
+2021-06-11 18:50:51.216 | SUCCESS  | deleter:format_importer:145 - 写入成功...
+2021-06-11 18:50:51.235 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:51:14.175 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:51:14.178 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '老師'
+2021-06-11 18:51:14.438 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:51:15.311 | SUCCESS  | deleter:delete_data:126 - 總計刪除5000筆資料
+2021-06-11 18:51:34.588 | WARNING  | deleter:format_importer:143 - ERR : 'bytes' object has no attribute 'readline' 
+2021-06-11 18:51:34.590 | SUCCESS  | deleter:format_importer:145 - 写入成功...
+2021-06-11 18:51:34.612 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:54:03.980 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:54:03.982 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '老師'
+2021-06-11 18:54:04.167 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:54:04.959 | SUCCESS  | deleter:delete_data:126 - 總計刪除5000筆資料
+2021-06-11 18:54:05.488 | WARNING  | deleter:format_importer:149 - ERR : 刪除數據發送失敗... 
+2021-06-11 18:54:05.488 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:55:31.526 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 18:55:31.530 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '老師'
+2021-06-11 18:55:31.706 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 18:55:32.470 | SUCCESS  | deleter:delete_data:126 - 總計刪除5000筆資料
+2021-06-11 18:55:32.895 | WARNING  | deleter:format_importer:150 - ERR : 發送失敗，請檢查數據接收地址設定～～ 
+2021-06-11 18:55:32.896 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 18:57:53.296 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:02:15.679 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:02:15.682 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:
+
+job = '老師'
+2021-06-11 19:02:15.865 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 19:02:16.673 | SUCCESS  | deleter:delete_data:126 - 總計刪除5000筆資料
+2021-06-11 19:02:17.268 | WARNING  | deleter:format_importer:149 - ERR : 發送失敗，請檢查數據接收地址設定～～ 
+2021-06-11 19:02:17.269 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 19:03:09.944 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:03:09.945 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:
+
+job = '老師'
+2021-06-11 19:03:10.121 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 19:03:11.647 | SUCCESS  | deleter:delete_data:126 - 總計刪除5000筆資料
+2021-06-11 19:04:20.196 | SUCCESS  | deleter:format_importer:141 - 刪除數據發送成功....
+2021-06-11 19:04:20.225 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 19:05:29.694 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:05:29.698 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '老師'
+2021-06-11 19:05:29.882 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 19:05:30.698 | SUCCESS  | deleter:delete_data:126 - 總計刪除5000筆資料
+2021-06-11 19:05:47.162 | SUCCESS  | deleter:format_importer:141 - 刪除數據發送成功....
+2021-06-11 19:05:47.178 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 19:37:31.693 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:37:31.696 | INFO     | handler:conf_parser:74 - 使用自定義刪除條件 -> 條件為:job = '老師'
+or region = '轄區3'
+2021-06-11 19:37:31.963 | SUCCESS  | handler:request:119 - INFO  取得數據成功
+2021-06-11 19:37:33.822 | SUCCESS  | deleter:delete_data:126 - 總計刪除5000筆資料
+2021-06-11 19:37:55.543 | SUCCESS  | deleter:format_importer:141 - 刪除數據發送成功....
+2021-06-11 19:37:55.563 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 19:41:25.534 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:41:25.538 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:job = '老師' or region = '轄區3'
+2021-06-11 19:41:25.709 | SUCCESS  | handler:request:120 - INFO  取得數據成功
+2021-06-11 19:41:26.758 | SUCCESS  | deleter:delete_data:126 - 總計刪除5000筆資料
+2021-06-11 19:41:43.288 | SUCCESS  | deleter:format_importer:141 - 刪除數據發送成功....
+2021-06-11 19:41:43.307 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 19:41:55.863 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:41:55.864 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:job = '老師' and region = '轄區3'
+2021-06-11 19:41:56.047 | SUCCESS  | handler:request:120 - INFO  取得數據成功
+2021-06-11 19:41:56.595 | SUCCESS  | deleter:delete_data:126 - 總計刪除1905筆資料
+2021-06-11 19:42:03.519 | SUCCESS  | deleter:format_importer:141 - 刪除數據發送成功....
+2021-06-11 19:42:03.536 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 19:42:17.274 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:42:17.276 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:42:17.479 | SUCCESS  | handler:request:120 - INFO  取得數據成功
+2021-06-11 19:42:17.710 | ERROR    | deleter:delete_data:129 - 無此條件，請重新設定
+2021-06-11 19:42:18.160 | WARNING  | deleter:format_importer:149 - ERR : 發送失敗，請檢查數據接收地址設定～～ 
+2021-06-11 19:42:18.161 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 19:43:40.093 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:43:40.096 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:43:40.273 | SUCCESS  | handler:request:120 - INFO  取得數據成功
+2021-06-11 19:43:40.496 | ERROR    | deleter:delete_data:129 - 無此條件，請重新設定
+2021-06-11 19:44:05.582 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:44:05.585 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:44:05.801 | SUCCESS  | handler:request:120 - INFO  取得數據成功
+2021-06-11 19:44:06.013 | ERROR    | deleter:delete_data:129 - 無此條件，請重新設定.....程序結束
+2021-06-11 19:47:30.720 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:47:30.724 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:47:31.133 | ERROR    | deleter:delete_data:129 - 無此條件，請重新設定.....程序結束
+2021-06-11 19:48:03.958 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:48:03.961 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:48:04.365 | ERROR    | deleter:delete_data:129 - 無此條件，請重新設定.....程序結束
+2021-06-11 19:48:31.212 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:48:31.214 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:48:31.446 | CRITICAL | handler:request:122 - 回傳狀態：400, {"error_type":"INVALID_ACCOUNT_OR_PASSWORD","error":"用户名或密码错误"}
+2021-06-11 19:48:31.447 | CRITICAL | handler:request:123 - 請檢查帳號密碼是否正確....
+2021-06-11 19:49:21.592 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:49:21.594 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:49:21.767 | ERROR    | handler:request:122 - 回傳狀態：400, {"error_type":"INVALID_ACCOUNT_OR_PASSWORD","error":"用户名或密码错误"}
+2021-06-11 19:49:21.768 | ERROR    | handler:request:123 - 請檢查帳號密碼是否正確....
+2021-06-11 19:49:35.912 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:49:35.914 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:49:35.916 | ERROR    | handler:request:116 - WARN  請檢查神策Web伺服器是否正確，程式終止 -> Failed to parse: http://127.0.0.1:81073/api/v2/auth/login
+2021-06-11 19:49:57.514 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:49:57.516 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:51:06.820 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:51:06.823 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:51:11.839 | ERROR    | handler:request:116 - WARN  請檢查神策Web伺服器是否正確，程式終止 -> HTTPConnectionPool(host='127.0.0.2', port=8107): Max retries exceeded with url: /api/v2/auth/login?project=default&is_global=true (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fc32d0d4970>, 'Connection to 127.0.0.2 timed out. (connect timeout=5)'))
+2021-06-11 19:52:37.363 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:52:37.365 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:52:42.375 | ERROR    | handler:request:116 - ERR  請檢查神策Web伺服器是否正確，程式終止 -> HTTPConnectionPool(host='127.0.0.2', port=8107): Max retries exceeded with url: /api/v2/auth/login?project=default&is_global=true (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fb53f0d7970>, 'Connection to 127.0.0.2 timed out. (connect timeout=5)'))
+2021-06-11 19:53:22.558 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:53:22.561 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:53:22.726 | ERROR    | handler:request:122 - 回傳狀態：503, {"error":"项目暂时不可用，请稍后重试"}
+2021-06-11 19:53:22.726 | ERROR    | handler:request:123 - 請檢查帳號密碼是否正確....
+2021-06-11 19:53:52.907 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:53:52.911 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:53:53.081 | ERROR    | handler:request:122 - 回傳狀態：503, {"error":"项目暂时不可用，请稍后重试"}
+2021-06-11 19:53:53.081 | ERROR    | handler:request:123 - 請檢查項目、帳號及密碼是否正確....
+2021-06-11 19:54:02.888 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:54:02.890 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:54:03.074 | ERROR    | handler:request:122 - 回傳狀態：400, {"error_type":"INVALID_ACCOUNT_OR_PASSWORD","error":"用户名或密码错误"}
+2021-06-11 19:54:03.074 | ERROR    | handler:request:123 - 請檢查項目、帳號及密碼是否正確....
+2021-06-11 19:54:26.590 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 19:54:26.592 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 19:54:26.592 | ERROR    | handler:conf_parser:87 - ERR , limit 請輸入數字 -> invalid literal for int() with base 10: 'ed'
+2021-06-11 19:54:26.969 | ERROR    | deleter:delete_data:129 - 無此條件，請重新設定.....程序結束
+2021-06-11 20:00:38.863 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:00:38.867 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 20:00:38.868 | ERROR    | handler:conf_parser:87 - ERR , limit 請輸入數字或空白 -> invalid literal for int() with base 10: 'ed'
+2021-06-11 20:00:52.878 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:00:52.879 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師' and region = '轄區3' or age < 30
+2021-06-11 20:00:53.264 | ERROR    | deleter:delete_data:129 - 無此條件，請重新設定.....程序結束
+2021-06-11 20:01:23.153 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:01:23.154 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:01:23.555 | ERROR    | deleter:delete_data:129 - 無此條件，請重新設定.....程序結束
+2021-06-11 20:02:05.581 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:02:05.583 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:02:06.078 | SUCCESS  | deleter:delete_data:126 - 總計刪除1筆資料
+2021-06-11 20:03:17.021 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:03:17.022 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:03:17.508 | SUCCESS  | deleter:delete_data:126 - 總計刪除1筆資料
+2021-06-11 20:03:47.184 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:03:47.185 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:03:47.732 | SUCCESS  | deleter:delete_data:126 - 總計刪除2筆資料
+2021-06-11 20:05:03.648 | WARNING  | deleter:format_importer:150 - ERR : 發送失敗，請檢查數據接收地址設定～～ 
+2021-06-11 20:05:03.651 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 20:05:24.719 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:05:24.721 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:05:25.216 | SUCCESS  | deleter:delete_data:126 - 總計刪除2筆資料
+2021-06-11 20:06:41.008 | WARNING  | deleter:format_importer:150 - ERR : 發送失敗，請檢查數據接收地址設定～～ 
+2021-06-11 20:06:41.009 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 20:07:37.245 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:07:37.249 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:07:37.828 | SUCCESS  | deleter:delete_data:127 - 總計刪除2筆資料
+2021-06-11 20:08:53.547 | WARNING  | deleter:format_importer:151 - ERR : 發送失敗，請檢查數據接收地址設定～～ 
+2021-06-11 20:08:53.549 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 20:09:28.649 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:09:28.652 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:09:29.140 | SUCCESS  | deleter:delete_data:127 - 總計刪除2筆資料
+2021-06-11 20:10:44.853 | WARNING  | deleter:format_importer:151 - ERR : 發送失敗，請檢查數據接收地址設定～～ 
+2021-06-11 20:10:44.855 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 20:21:15.531 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:21:15.534 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:21:16.267 | SUCCESS  | deleter:delete_data:131 - 總計刪除2筆資料
+2021-06-11 20:21:16.900 | SUCCESS  | deleter:format_importer:147 - 刪除數據發送成功....
+2021-06-11 20:21:16.919 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 20:21:24.938 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:21:24.940 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:21:30.199 | ERROR    | deleter:init_sa:94 - ERR : 發送失敗，請檢查數據接收地址設定，程式終止 -> : HTTPConnectionPool(host='127.0.0.2', port=8106): Max retries exceeded with url: /sa?project=default (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fec6b7c1c10>, 'Connection to 127.0.0.2 timed out. (connect timeout=5)'))
+2021-06-11 20:22:06.047 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:22:06.049 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:22:06.252 | ERROR    | handler:request:125 - 回傳狀態：400, {"error_type":"INVALID_ACCOUNT_OR_PASSWORD","error":"用户名或密码错误"}
+2021-06-11 20:22:06.253 | ERROR    | handler:request:126 - 請檢查項目、帳號及密碼是否正確....
+2021-06-11 20:22:27.564 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:22:27.566 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師'
+2021-06-11 20:22:27.744 | ERROR    | handler:request:125 - 回傳狀態：400, {"error_type":"INVALID_ACCOUNT_OR_PASSWORD","error":"用户名或密码错误"}
+2021-06-11 20:22:27.744 | ERROR    | handler:request:126 - 請檢查項目、帳號及密碼是否正確....
+2021-06-11 20:22:45.793 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:22:45.795 | INFO     | handler:conf_parser:75 - 使用自定義刪除條件 -> 條件為:  job = '老師2'
+2021-06-11 20:22:46.570 | ERROR    | deleter:delete_data:134 - 無此條件，請重新設定.....程序結束
+2021-06-11 20:24:00.009 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:24:06.051 | SUCCESS  | deleter:delete_data:131 - 總計刪除2筆資料
+2021-06-11 20:24:10.402 | SUCCESS  | deleter:format_importer:147 - 刪除數據發送成功....
+2021-06-11 20:24:10.420 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 20:24:30.067 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:24:35.479 | SUCCESS  | deleter:delete_data:131 - 總計刪除1筆資料
+2021-06-11 20:24:39.417 | SUCCESS  | deleter:format_importer:147 - 刪除數據發送成功....
+2021-06-11 20:24:39.433 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 20:25:03.242 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:25:03.243 | ERROR    | handler:conf_parser:87 - ERR , limit 請輸入數字或空白 -> invalid literal for int() with base 10: '100,0000'
+2021-06-11 20:25:10.564 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:25:38.896 | SUCCESS  | deleter:delete_data:131 - 總計刪除227805筆資料
+2021-06-11 20:40:04.430 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:40:04.875 | INFO     | deleter:get_data:111 - 取得使用者資訊中.....
+2021-06-11 20:40:06.643 | SUCCESS  | deleter:delete_data:132 - 總計刪除8305筆資料
+2021-06-11 20:40:06.643 | INFO     | deleter:format_importer:141 - 發送刪除數據.....
+2021-06-11 20:40:39.177 | SUCCESS  | deleter:format_importer:149 - 刪除數據發送成功....
+2021-06-11 20:40:39.194 | SUCCESS  | __main__:<module>:50 - 程序結束，請至神策數據的default項目查看
+2021-06-11 20:42:45.869 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 20:42:45.872 | WARNING  | handler:conf_parser:82 - 一次最多只能刪除50萬筆..
+2021-06-11 20:42:46.213 | INFO     | deleter:get_data:111 - 取得使用者資訊中.....
+2021-06-11 20:43:12.320 | SUCCESS  | deleter:delete_data:132 - 總計刪除314769筆資料
+2021-06-11 20:43:12.335 | INFO     | deleter:format_importer:141 - 發送刪除數據.....
+2021-06-11 21:01:39.255 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 21:01:39.258 | WARNING  | handler:conf_parser:82 - 一次最多只能刪除10萬筆..
+2021-06-11 21:01:39.271 | ERROR    | handler:request:119 - ERR  請檢查神策Web伺服器是否正確，程式終止 -> HTTPConnectionPool(host='127.0.0.1', port=8107): Max retries exceeded with url: /api/v2/auth/login?project=default&is_global=true (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f852e8e0970>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2021-06-11 21:02:06.132 | INFO     | __main__:<module>:46 - 程序開始...
+2021-06-11 21:02:06.134 | WARNING  | handler:conf_parser:82 - 一次最多只能刪除10萬筆..
+2021-06-11 21:02:06.798 | INFO     | deleter:get_data:111 - 取得使用者資訊中.....
+2021-06-11 21:03:03.288 | SUCCESS  | deleter:delete_data:132 - 總計刪除100000筆資料
+2021-06-11 21:03:03.294 | INFO     | deleter:format_importer:141 - 發送刪除數據.....
