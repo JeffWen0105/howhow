@@ -1,0 +1,31 @@
+server:
+  ## 映射的阜號，如果沒有使用到不用改，只是一個web介面
+  http_listen_port: 9980
+  grpc_listen_port: 0
+
+positions:
+  filename:  log/promtail.yml 
+
+clients:
+### 修改你自己的 Docker IP 位置 ！！！！
+  - url : http://192.168.50.195:3100/loki/api/v1/push
+
+## 修改下方參數
+
+scrape_configs:
+## 如果要多個Path或任務複製下面區塊並貼上，需注意縮排！！！
+### 區塊開始
+
+   # 修改自己的任務名稱
+ - job_name: DEMO_JOBS
+   static_configs:
+   - targets:
+       # 自己機器名稱
+       - localhost
+     labels:
+       # 任務名稱標籤-查詢好用
+       job: Demo_TEST
+       # 抓取Log位置
+       __path__: /var/log/*.log
+
+### 區塊結束
