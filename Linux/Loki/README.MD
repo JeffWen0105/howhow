@@ -1,4 +1,4 @@
-# 自動化建置 Loki 的代理採集工具 Promtail
+# 自動化建置 Loki 的採集各機器 Log 的 Agent -> Promtail
 
 #### 1. 執行需求：
 
