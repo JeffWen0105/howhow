@@ -7,7 +7,7 @@ positions:
   filename:  log/promtail.yml 
 
 clients:
-### 修改你自己的 Docker IP 位置 ！！！！
+### 修改你自己的 Docker IP 及 Loki 映射對外的port  ！！！！
   - url : http://192.168.50.195:3100/loki/api/v1/push
 
 ## 修改下方參數

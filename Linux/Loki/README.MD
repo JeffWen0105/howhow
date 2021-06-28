@@ -10,8 +10,8 @@
 #### 2. 使用方式：
 
 ```
-1. 輸入：   mkdir -p ~/howhowwen/Loki && cd ~/howhowwen/Loki &&  curl https://jeffwen0105.github.io/howhow/Linux/Loki/script/loki_promtail.sh --output loki_promtail.sh  && sh loki_promtail.sh
+1. 輸入： mkdir -p ~/howhowwen/Loki && cd ~/howhowwen/Loki &&  curl https://jeffwen0105.github.io/howhow/Linux/Loki/script/loki_promtail.sh --output loki_promtail.sh  && sh loki_promtail.sh
 2. 下載完畢後修改 promatil內的 conf 設定檔，內有詳細說明
-3. 執行 sh start_promtail.sh 就會開始發送數據
+3. 執行: sh start_promtail.sh 就會開始發送數據
 ```
 
