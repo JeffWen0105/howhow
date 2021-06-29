@@ -22,10 +22,10 @@ function check_release(){
 }
 
 function docker_check(){
-  docker -h > /dev/null
+  docker --help > /dev/null
   [[ "$?" == "1" ]] && sudo systemctl start docker
   [[ "$?" == "127" ]] && docker_installer
-  docker-compose -h > /dev/null
+  docker-compose --help > /dev/null
   [[ "$?" == "127" ]] && docker_compose_installer
 }
 
@@ -49,7 +49,7 @@ function docker_compose_installer(){
   sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname -s)-$(uname -m)" \
    -o /usr/local/bin/docker-compose && \
   sudo chmod +x /usr/local/bin/docker-compose
-  sudo docker-compose --version
+  docker-compose --version
 }
 
 function loki_installer(){
@@ -64,7 +64,7 @@ function loki_installer(){
   sudo chmod -R 755 /mnt/rawdata/howhow/loki/data
   wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/Docker/docker-compose.yml \
    -O docker-compose.yml
-  sudo docker-compose up -d
+  docker-compose up -d
   loki_init
 }
 
