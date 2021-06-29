@@ -47,8 +47,8 @@ function docker_installer() {
 function docker_compose_installer(){
   log_info "安裝Docker Compose..請稍等"
   sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname -s)-$(uname -m)" \
-   -o bin/docker-compose && \
-  sudo chmod +x bin/docker-compose
+   -o /bin/docker-compose && \
+  sudo chmod +x /bin/docker-compose
   docker-compose --version
 }
 
