@@ -64,7 +64,7 @@ function loki_installer(){
   sudo chmod -R 755 /mnt/rawdata/howhow/loki/data
   wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/Docker/docker-compose.yml \
    -O docker-compose.yml
-  docker-compose up -d
+  sudo docker-compose up -d
   loki_init
 }
 
