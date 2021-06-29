@@ -59,7 +59,7 @@ function loki_installer(){
   cd ~/howhow/loki && \
   sudo mkdir -p /mnt/rawdata/howhow/loki/data
   sudo wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/conf/local-config.yaml \
-   -O /mnt/rawdata/howhow/loki/conf/local-config.yaml
+   -O /mnt/rawdata/howhow/loki/confing/local-config.yaml
   sudo chmod -R 755 /mnt/rawdata/howhow/loki/ && \
   sudo chmod -R 755 /mnt/rawdata/howhow/loki/data
   wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/Docker/docker-compose.yml \
@@ -85,9 +85,13 @@ function loki_init(){
    cd .. &&  wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/start_promtail.sh -O start_promtail.sh \
    && chmod 755 start_promtail.sh && wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/stop_promtail.sh\
     -O stop_promtail.sh && chmod 755 stop_promtail.sh
+  sed -i 's+./bin/promtail-linux-amd64+/home/sa_cluster/howhow/loki/promtail/bin/promtail-linux-amd64+g' start_promtail.sh  
+  sed 's+=conf/config-promtail.yml+=/home/sa_cluster/howhow/loki/promtail/conf/config-promtail.yml+g' start_promtail.sh
+  sudo ln -s start_promtail.sh /bin/start_promtail.sh
+  sudo ln -s stop_promtail.sh /bin/start_promtail.sh
   log_info "$(pwd)目錄狀態為："
   ls -lh
-  log_info "\n程序執行完畢，請執行 start_promtail.sh 執行程序，會自動抓取 SBP 所有 web Log"
+  log_info "\n程序執行完畢，請使用 sh start_promtail.sh 執行程序，會自動抓取 SBP 所有 web Log"
   log_info "配置Loki數據來源，請掃描QRcode參考HowHow的說明："
   qrencode -m 2 -t utf8 <<<  "qrencode -m 2 -t utf8 <<<  "https://jeffwen0105.com/grafana""
 }
