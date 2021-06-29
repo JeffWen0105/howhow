@@ -22,10 +22,10 @@ function check_release(){
 }
 
 function docker_check(){
-  sudo docker -h > /dev/null
+  docker -h > /dev/null
   [[ "$?" == "1" ]] && sudo systemctl start docker
   [[ "$?" == "127" ]] && docker_installer
-  sudo docker-compose -h > /dev/null
+  docker-compose -h > /dev/null
   [[ "$?" == "127" ]] && docker_compose_installer
 }
 
@@ -95,7 +95,7 @@ function loki_init(){
 function lib_check(){
   unzip -h > /dev/null
   [[ "$?" != "0" ]] && yum install -y zip > /dev/null
-  qrencode -h > /dev/null
+  qrencode -V > /dev/null
   [[ "$?" != "0" ]] && yum install -y qrencode > /dev/null
 }
 
