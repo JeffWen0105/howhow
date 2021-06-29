@@ -104,9 +104,9 @@ function loki_init(){
 
 function lib_check(){
   unzip -h > /dev/null
-  [[ "$?" != "0" ]] && yum install -y zip > /dev/null
+  [[ "$?" != "0" ]] && sudo yum install -y zip > /dev/null
   qrencode -V > /dev/null
-  [[ "$?" != "0" ]] && yum install -y qrencode > /dev/null
+  [[ "$?" != "0" ]] && sudo yum install -y qrencode > /dev/null
 }
 
 if [[ $(whoami) != "sa_cluster" ]]; then
