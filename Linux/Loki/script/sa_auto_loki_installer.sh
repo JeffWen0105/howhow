@@ -92,7 +92,8 @@ function loki_init(){
   log_info "$(pwd)目錄狀態為："
   ls -lh
   log_info "\n程序執行完畢，請使用 sh start_promtail.sh 執行程序，會自動抓取 SBP 所有 web Log"
-  log_info "配置Loki數據來源，請掃描QRcode參考HowHow的說明："
+  log_info "請至Grafana -> http://$(hostname -i):3000  上配置Loki數據來源"
+  log_info "如何配置，請掃描QRcode參考HowHow的說明："
   qrencode -m 2 -t utf8 <<<  "qrencode -m 2 -t utf8 <<<  "https://jeffwen0105.com/grafana""
 }
 
