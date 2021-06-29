@@ -57,7 +57,7 @@ function loki_installer(){
   mkdir -p ~/howhow/loki &&  \
   sudo mkdir -p /mnt/rawdata/howhow/loki/conf  && \
   cd ~/howhow/loki && \
-  sudo mkdir -p /mnt/rawdata/howhow/loki/data
+  sudo mkdir -p /mnt/rawdata/howhow/loki/data && sudo mkdir -p /mnt/rawdata/howhow/loki/confing/
   sudo wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/conf/local-config.yaml \
    -O /mnt/rawdata/howhow/loki/confing/local-config.yaml
   sudo chmod -R 755 /mnt/rawdata/howhow/loki/ && \
