@@ -17,8 +17,7 @@ function check_release(){
     exit 1
   else
     os=$(hostnamectl | grep 'Operating System' | grep "CentOS")
-      [[ $os != '' ]] && log_info "檢測版本為CentOS 系列.." 
-       || log_info "檢測版本為Red Hat 系列.."
+      [[ $os != '' ]] && log_info "檢測版本為CentOS 系列.." || log_info "檢測版本為Red Hat 系列.."
   fi
 }
 
