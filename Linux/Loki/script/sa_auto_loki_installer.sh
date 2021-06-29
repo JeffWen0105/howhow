@@ -81,14 +81,13 @@ function loki_init(){
   chmod 755 promtail-linux-amd64
   log_info "下載promtail組態檔及執行腳本..請稍等"
   cd ../conf && wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/conf/config-promtail.yml  -O config-promtail.yml
-  sed -i 's+log/promtail.yml+/home/sa_cluster/howhow/loki/promtail/log/promtail.yml+g' config-promtail.ym
+  sed -i 's+log/promtail.yml+/home/sa_cluster/howhow/loki/promtail/log/promtail.yml+g' config-promtail.yml
   sed -i 's+192.168.50.195+127.0.0.1+g' config-promtail.yml
   ls /sensorsdata/main/logs/sbp/web/*.log > /dev/null
   [[ "$?" == "0" ]] && \
    sed -i 's+/var/log/\*.log+/sensorsdata/main/logs/sbp/web/\*.log.\*+g' config-promtail.yml || \
    sed -i 's+/var/log/\*.log+/data/sa_cluster/logs/sa/web/\*.log.\*+g' config-promtail.yml
-  ls /sensorsdata/main/logs/sbp/web/*.log > /dev/null
-   cd .. &&  wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/start_promtail.sh -O start_promtail.sh \
+  cd .. &&  wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/start_promtail.sh -O start_promtail.sh \
    && chmod 755 start_promtail.sh && wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/stop_promtail.sh \
     -O stop_promtail.sh && chmod 755 stop_promtail.sh
   sed -i 's+./bin/promtail-linux-amd64+/home/sa_cluster/howhow/loki/promtail/bin/promtail-linux-amd64+g' start_promtail.sh  
