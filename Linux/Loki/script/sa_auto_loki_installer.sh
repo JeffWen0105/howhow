@@ -86,9 +86,9 @@ function loki_init(){
    && chmod 755 start_promtail.sh && wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/stop_promtail.sh\
     -O stop_promtail.sh && chmod 755 stop_promtail.sh
   sed -i 's+./bin/promtail-linux-amd64+/home/sa_cluster/howhow/loki/promtail/bin/promtail-linux-amd64+g' start_promtail.sh  
-  sed 's+=conf/config-promtail.yml+=/home/sa_cluster/howhow/loki/promtail/conf/config-promtail.yml+g' start_promtail.sh
-  sudo ln -s start_promtail.sh /bin/start_promtail.sh
-  sudo ln -s stop_promtail.sh /bin/stop_promtail.sh
+  sed -i 's+=conf/config-promtail.yml+=/home/sa_cluster/howhow/loki/promtail/conf/config-promtail.yml+g' start_promtail.sh
+  sudo ln -s /home/sa_cluster/howhow/loki/promtail/start_promtail.sh /usr/bin/start_promtail.sh
+  sudo ln -s /home/sa_cluster/howhow/loki/promtail/stop_promtail.sh /usr/bin/stop_promtail.sh
   log_info "$(pwd)目錄狀態為："
   ls -lh
   log_info "\n程序執行完畢，請使用 sh start_promtail.sh 執行程序，會自動抓取 SBP 所有 web Log"
