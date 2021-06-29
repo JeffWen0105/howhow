@@ -12,5 +12,5 @@ function log_err() {
 
 nohup ./bin/promtail-linux-amd64 -config.file=conf/config-promtail.yml  > running.log 2>&1 &
 
- [[ "$?" == "0" ]] && log_info "\n1.成功於背景執行Promtail\n2.停止請執行 stop_promtail.sh\n3.執行 Log 進度，請使用tail -f running.log" || log_err "執行異常，請查看 running.log"
+ [[ "$?" == "0" ]] && log_info "\n1.成功於背景執行Promtail\n2.停止請執行sh stop_promtail.sh\n3.執行 Log 進度，請使用tail -f running.log" || log_err "執行異常，請查看 running.log"
  
