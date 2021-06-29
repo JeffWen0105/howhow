@@ -87,7 +87,7 @@ function loki_init(){
    sed -i 's+/var/log/\*.log+/data/sa_cluster/logs/sa/web/\*.log.\*+g' config-promtail.yml
   ls /sensorsdata/main/logs/sbp/web/*.log > /dev/null
    cd .. &&  wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/start_promtail.sh -O start_promtail.sh \
-   && chmod 755 start_promtail.sh && wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/stop_promtail.sh\
+   && chmod 755 start_promtail.sh && wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/stop_promtail.sh \
     -O stop_promtail.sh && chmod 755 stop_promtail.sh
   sed -i 's+./bin/promtail-linux-amd64+/home/sa_cluster/howhow/loki/promtail/bin/promtail-linux-amd64+g' start_promtail.sh  
   sed -i 's+=conf/config-promtail.yml+=/home/sa_cluster/howhow/loki/promtail/conf/config-promtail.yml+g' start_promtail.sh
