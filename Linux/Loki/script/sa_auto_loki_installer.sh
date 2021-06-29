@@ -22,10 +22,10 @@ function check_release(){
 }
 
 function docker_check(){
-  docker --help > /dev/null
+  sudo docker --help > /dev/null
   [[ "$?" == "1" ]] && sudo systemctl start docker
   [[ "$?" == "127" ]] && docker_installer
-  docker-compose --help > /dev/null
+  sudo docker-compose --help > /dev/null
   [[ "$?" == "1" ]] && docker_compose_installer
 }
 
