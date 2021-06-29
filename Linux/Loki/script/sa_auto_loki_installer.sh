@@ -85,8 +85,8 @@ function loki_init(){
   sed -i 's+192.168.50.195+127.0.0.1+g' config-promtail.yml
   ls /sensorsdata/main/logs/sbp/web/*.log > /dev/null
   [[ "$?" == "0" ]] && \
-   sed -i 's+/var/log/\*.log+/sensorsdata/main/logs/sbp/web/\*.log.\*+g' config-promtail.yml || \
-   sed -i 's+/var/log/\*.log+/data/sa_cluster/logs/sa/web/\*.log.\*+g' config-promtail.yml
+   sed -i 's+/var/log/\*.log+/sensorsdata/main/logs/sbp/web/\*.log+g' config-promtail.yml || \
+   sed -i 's+/var/log/\*.log+/data/sa_cluster/logs/sa/web/\*.log+g' config-promtail.yml
   cd .. &&  wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/start_promtail.sh -O start_promtail.sh \
    && chmod 755 start_promtail.sh && wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/stop_promtail.sh \
     -O stop_promtail.sh && chmod 755 stop_promtail.sh
@@ -96,7 +96,7 @@ function loki_init(){
   sudo ln -s /home/sa_cluster/howhow/loki/promtail/stop_promtail.sh /usr/bin/stop_promtail.sh
   log_info "$(pwd)目錄狀態為："
   ls -lh
-  log_info "\n程序執行完畢，請使用 sh start_promtail.sh 執行程序，會自動抓取 SBP 所有 web Log"
+  log_info "\n程序執行完畢，請使用 sh start_promtail.sh 執行程序，會自動抓取 SBP 所有最新的 web Log"
   log_info "請至Grafana -> http://$(hostname -i):3000  上配置Loki數據來源"
   log_info "如何配置，請掃描QRcode參考HowHow的說明："
   qrencode -m 2 -t utf8 <<<  "qrencode -m 2 -t utf8 <<<  "https://jeffwen0105.com/grafana""
