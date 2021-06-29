@@ -12,7 +12,10 @@ services:
     command: -config.file=/etc/loki/local-config.yaml
     networks:
       - loki
-
+    volumes:
+      - /mnt/rawdata/howhow/loki/config:/etc/loki/
+      - /mnt/rawdata/howhow/loki/data:/loki/  
+      
   grafana:
     container_name: HowHow-Grafana
     image: grafana/grafana:latest
