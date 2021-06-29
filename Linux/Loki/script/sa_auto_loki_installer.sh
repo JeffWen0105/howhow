@@ -81,6 +81,7 @@ function loki_init(){
   chmod 755 promtail-linux-amd64
   log_info "下載promtail組態檔及執行腳本..請稍等"
   cd ../conf && wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/conf/config-promtail.yml  -O config-promtail.yml
+  sed -i 's+log/promtail.yml+/home/sa_cluster/howhow/loki/promtail/log/promtail.yml+g' config-promtail.ym
   sed -i 's+192.168.50.195+127.0.0.1+g' config-promtail.yml
   ls /sensorsdata/main/logs/sbp/web/*.log > /dev/null
   [[ "$?" == "0" ]] && \
