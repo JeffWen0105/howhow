@@ -16,7 +16,8 @@ function check_release(){
     log_err "目前僅支援CentOS 或Red Hat 系列安裝..."
     exit 1
   else
-      if [[ $os | grep "CentOS"  != '' ]] && log_info "檢測版本為CentOS 系列.." \
+    os=$(hostnamectl | grep 'Operating System' | grep "CentOS")
+      [[ $os != '' ]] && log_info "檢測版本為CentOS 系列.." 
        || log_info "檢測版本為Red Hat 系列.."
   fi
 }
@@ -26,7 +27,7 @@ function docker_check(){
   [[ "$?" == "1" ]] && sudo systemctl start docker
   [[ "$?" == "127" ]] && docker_installer
   sudo docker-compose -h > /dev/null
-  [[ "$?" == "127" ]] && docker-compose_installer
+  [[ "$?" == "127" ]] && docker_compose_installer
 }
 
 
@@ -44,7 +45,7 @@ function docker_installer() {
   sudo docker run hello-world
 }
 
-function docker-compose_installer(){
+function docker_compose_installer(){
   log_info "安裝Docker Compose..請稍等"
   sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname -s)-$(uname -m)" \
    -o /usr/local/bin/docker-compose && \
