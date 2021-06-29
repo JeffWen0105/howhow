@@ -60,8 +60,8 @@ function loki_installer(){
   sudo mkdir -p /mnt/rawdata/howhow/loki/data && sudo mkdir -p /mnt/rawdata/howhow/loki/config
   sudo wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/conf/local-config.yaml \
    -O /mnt/rawdata/howhow/loki/config/local-config.yaml
-  sudo chmod -R 755 /mnt/rawdata/howhow/loki/ && \
-  sudo chmod -R 755 /mnt/rawdata/howhow/loki/data
+  sudo chmod -R 777 /mnt/rawdata/howhow/loki/ && \
+  sudo chmod -R 777 /mnt/rawdata/howhow/loki/data
   wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/Docker/docker-compose.yml \
    -O docker-compose.yml
   sudo docker-compose up -d
@@ -81,7 +81,11 @@ function loki_init(){
   chmod 755 promtail-linux-amd64
   log_info "下載promtail組態檔及執行腳本..請稍等"
   cd ../conf && wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/conf/config-promtail.yml  -O config-promtail.yml
-  sed -i 's+/var/log/\*.log+/sensorsdata/main/logs/sbp/web/\*.log.\*+g' config-promtail.yml
+  ls /sensorsdata/main/logs/sbp/web/*.log > /dev/null
+  [[ "$?" == "0" ]] && \
+   sed -i 's+/var/log/\*.log+/sensorsdata/main/logs/sbp/web/\*.log.\*+g' config-promtail.yml || \
+   sed -i 's+/var/log/\*.log+/data/sa_cluster/logs/sa/web/\*.log.\*+g' config-promtail.yml
+  ls /sensorsdata/main/logs/sbp/web/*.log > /dev/null
    cd .. &&  wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/start_promtail.sh -O start_promtail.sh \
    && chmod 755 start_promtail.sh && wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/script/stop_promtail.sh\
     -O stop_promtail.sh && chmod 755 stop_promtail.sh
