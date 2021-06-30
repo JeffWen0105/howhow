@@ -75,7 +75,7 @@ function loki_init(){
   lib_check
   howhowhome=/home/sa_cluster/howhow/loki
   cd $howhowhome
-  mkdir -p  $howhowhome/promtail/bin && mkdir -p $howhowhome/promtail/log && mkdir -p $howhowhome/loki/promtail/conf
+  mkdir -p  $howhowhome/promtail/bin && mkdir -p $howhowhome/promtail/log && mkdir -p $howhowhome/promtail/conf
   [[ "$?" == "0" ]] && log_info "創建 bin log conf 目錄.." || \
   log_err "創建 bin log conf 目錄失敗，請檢查權限...\n程式結束" || exit 1
   log_info "下載 Promtail 主程式..請稍等"
