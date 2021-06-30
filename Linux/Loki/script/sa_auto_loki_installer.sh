@@ -22,8 +22,8 @@ function check_release(){
 }
 
 function docker_check(){
-  sudo docker --help > /dev/null
-  [[ "$?" == "1" ]] && sudo systemctl start docker
+  sudo docker ps > /dev/null
+  [[ "$?" == "1" ]] && log_info "啟動Docker Server" && sudo systemctl start docker
   [[ "$?" == "127" ]] && docker_installer
   sudo docker-compose --help > /dev/null
   [[ "$?" == "1" ]] && docker_compose_installer
@@ -45,10 +45,11 @@ function docker_installer() {
 
 function docker_compose_installer(){
   log_info "安裝 Docker Compose ..請稍等"
-  sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname -s)-$(uname -m)" \
-   -o /bin/docker-compose && \
-  sudo chmod +x /bin/docker-compose
-  docker-compose --version
+  sudo curl -L https://github.com/docker/compose/releases/download/1.11.1/docker-compose-`uname -s `-`uname -m` > /usr/local/bin/docker-compose
+    sudo chmod +x /usr/local/bin/docker-compose && \
+    sudo ln -s /usr/local/bin/docker-compose /bin/docker-compose    
+  sudo docker-compose --version > /dev/null
+  [[ "$?" == "0" ]] && log_info "Docker Compose 安裝完成" || log_err "Docker compose安裝異常，程序退出.." || exit 1 
 }
 
 function loki_installer(){
@@ -64,6 +65,7 @@ function loki_installer(){
   wget -q https://jeffwen0105.github.io/howhow/Linux/Loki/Docker/docker-compose.yml \
    -O docker-compose.yml
   sudo docker-compose up -d
+  [[ "$?" != "0" ]] && log_err "部署異常，程序退出.." && exit 1 || log_info "部署完成.."
   loki_init
 }
 
