@@ -45,7 +45,8 @@ function docker_installer() {
 
 function docker_compose_installer(){
   log_info "安裝 Docker Compose ..請稍等"
-  sudo curl -L https://github.com/docker/compose/releases/download/1.11.1/docker-compose-`uname -s `-`uname -m` > /usr/local/bin/docker-compose
+  sudo curl -L https://github.com/docker/compose/releases/download/1.11.1/docker-compose-`uname -s `-`uname -m` > docker-compose &&  \
+    sudo mv  docker-compose /usr/local/bin/docker-compose && \
     sudo chmod +x /usr/local/bin/docker-compose && \
     sudo ln -s /usr/local/bin/docker-compose /bin/docker-compose    
   sudo docker-compose --version > /dev/null
