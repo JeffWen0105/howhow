@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 bin/main.py @
+python3 bin/main.py $@
