@@ -3,12 +3,13 @@
 #### 執行方式
 
 ```
-#  sh start.sh 項目英文變數 表的名稱
+0.  sh start.sh -h 說明
+              # 項目   # 表
 1. sh start.sh default users
 ```
 
 #### 輸出結果
 
 ```
-output 資料夾產生Json，每一百萬數據一捆
+output 資料夾產生神策Json格式，每一百萬數據打包一捆
 ```

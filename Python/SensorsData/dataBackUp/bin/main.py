@@ -9,7 +9,7 @@ import data_backup
 @logger.catch
 def argParse():
     parser = argparse.ArgumentParser(prog="Api 數據備份工具",
-                                     description="Events、Users及Items都可以被份， 詳請參閱README.md")
+                                     description="Events、Users及Items 等各表備份， 詳請參閱README.md")
     parser.add_argument("project", type=str,
                         help="project name")
     parser.add_argument("tables", 
