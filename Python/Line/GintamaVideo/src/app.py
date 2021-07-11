@@ -1,16 +1,25 @@
-from flask import Flask, render_template, request, Response, abort, jsonify
+import json
+
+from flask import Flask, render_template, request, Response
 from flask_restful import Resource, Api
 from flask_cors import CORS
+
+import requests
 
 app = Flask(__name__)
 api = Api(app)
 CORS(app)
 
+
+@app.route('/')
+def video():
+    return render_template("video.html")
+
 def setToken():
-        f = open(f'conf/token.txt', 'r')
-        token = f.read()
-        Token = token
-        f.close()
+    f = open(f'conf/token.txt', 'r')
+    token = f.read()
+    Token = token
+    f.close()
     return Token
 
 def push_video(num):
@@ -30,7 +39,7 @@ def push_video(num):
 
 
 def get_video_list():
-    with open(f"output/video.json", 'r') as reader:
+    with open(f"rawdata/video.json", 'r') as reader:
         data = json.loads(reader.read())
     return data
 
@@ -52,3 +61,6 @@ class GetVideo(Resource):
 
 api.add_resource(Videos, '/videos')
 api.add_resource(GetVideo, '/getvideo/<string:gid>')
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0",port=5000)

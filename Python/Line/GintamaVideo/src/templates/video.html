@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta id="my-domain" data-name="{{ (request.host) }}" >
+    <meta id="my-domain" data-name="{{ (request.host) }}">
     <!-- bootstrap.css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -87,7 +87,7 @@
                     </form>
                     <div class="mb-3 form-check"></div>
                     <button id='play' disabled class="btn btn-primary" onclick="getValue();" data-toggle="popover"
-                        title="Error.." data-placement="bottom" data-content="請選擇集數～～～">  
+                        title="Error.." data-placement="bottom" data-content="請選擇集數～～～">
                         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
                         Loading...
                     </button>
@@ -146,9 +146,9 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            第一季
-                            <span>[01+02]-[要蓋章之前得先仔細確認好內容]-TV原創劇情1小時SP</span>
-                            <span>自行爬取...</span>
+                            <div class="text-center">第一季</div>
+                            <div>[01+02]-[要蓋章之前得先仔細確認好內容]-TV原創劇情1小時SP</div>
+                            <div class="font-italic font-weight-bolder text-danger">其他請參考HowHow教學爬取...</div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
@@ -169,11 +169,9 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            第二季
-                            <span>[202]-[春假過後大家都稍有成熟]-兩年後疣篇(上)</span>
-                            <span>自行爬取...</span>
-                        </div>
+                        <div class="text-center">第二季</div>
+                        <div>[202]-[春假過後大家都稍有成熟]-兩年後疣篇(上)</div>
+                        <div class="font-italic font-weight-bolder text-danger">其他請參考HowHow教學爬取...</div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
                         </div>
@@ -194,9 +192,9 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            第三季
-                            <span>[266]-[時間停止不會停在最有甜頭的時候]-時間停止篇(上)</span>
-                            <span>自行爬取...</span>
+                            <div class="text-center">第三季</div>
+                            <div>[266]-[時間停止不會停在最有甜頭的時候]-時間停止篇(上)</div>
+                            <div class="font-italic font-weight-bolder text-danger">其他請參考HowHow教學爬取...</div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
@@ -218,9 +216,9 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            第四季
-                        <span>[317]-[怪物與怪物之子]-烙陽決戰篇(1)</span>
-                        <span>自行爬取...</span>
+                            <div class="text-center">第四季</div>
+                            <div>[317]-[怪物與怪物之子]-烙陽決戰篇(1)</div>
+                            <div class="font-italic font-weight-bolder text-danger">其他請參考HowHow教學爬取...</div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
@@ -253,15 +251,11 @@
             </div>
             <!-- toast -->
 
-
-
-
             <script>
                 let ModalV1 = new bootstrap.Modal(document.getElementById('ModalV1'));
                 let ModalV2 = new bootstrap.Modal(document.getElementById('ModalV2'));
                 let ModalV3 = new bootstrap.Modal(document.getElementById('ModalV3'));
                 let ModalV4 = new bootstrap.Modal(document.getElementById('ModalV4'));
-                let loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
                 let domain = $('#my-domain').data().name
                 getValue = () => {
                     if (isNaN($('#get-data').val())) {
@@ -270,23 +264,20 @@
                             $('[data-toggle="popover"]').popover('hide');
                         }, 2000);
                     } else {
-
                         value = $('#get-data').val();
-                        // console.log(value);
                         $('#play').text(`發送中..請稍等 ~~`);
-                        $("#liveToastV").text(`${value}集已發送，至line上查看`);
+                        $("#liveToastV").text(`第 ${value} 集已發送，請至 Line 上面查看～～`);
                         $("#liveToast").toast('show');
                         $('#play').attr("disabled", true);
-                        let url = `//${domain}/${value}`;
+                        let url = `//${domain}/getvideo/${value}`;
                         axios
                             .post(url)
                             .then(res => {
-                                // $('#play').text(`play`);
-                                console.log('ok');
                             }).catch(err => {
                                 console.log('伺服器錯誤', err.status);
                                 $('#push').text('伺服器錯誤，請稍後再試');
-                                console.log(err)
+                                $("#liveToastV").text(`伺服器錯誤 : ${err.status}，請稍後再試`);
+                                $("#liveToast").toast('show');
                             }
                             );
                         setTimeout(function () {
@@ -296,7 +287,6 @@
                     }
                 }
                 url = `//${domain}/videos`;
-                console.log("url", url);
                 getData = datas => {
                     axios
                         .get(url)
