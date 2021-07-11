@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="my-domain" data-name="{{ (request.host) }}" >
+    <!-- bootstrap.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <!-- bootstrap.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <!-- products.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <title>銀魂 Video</title>
+    <style>
+        .navbar {
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+        }
+
+        body {
+            padding-top: 56px;
+        }
+
+        #header {
+            padding: 100px 0px;
+            margin: 0px;
+        }
+    </style>
+    <script>
+        function ModalToggleV1() {
+            ModalV1.toggle();
+        }
+
+        function ModalToggleV2() {
+            ModalV2.toggle();
+        }
+
+        function ModalToggleV3() {
+            ModalV3.toggle();
+        }
+
+        function ModalToggleV4() {
+            ModalV4.toggle();
+        }
+
+        function toastShowLogin() {
+            $("#liveToast").toast('show');
+        }
+    </script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">HowHowWen の Videos Site</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div id="header" class="jumbotron">
+        <div class="container">
+            <div class="input-group mb-3 ">
+                <div class="mb-3 ">
+                    <label for="exampleInputEmail1" class="form-label">選擇想看的影片</label>
+                    <form id='video'>
+                        <select id='get-data' class="form-select" aria-label="container-sm">
+                            <option selected>Open this select menu</option>
+                        </select>
+                    </form>
+                    <div class="mb-3 form-check"></div>
+                    <button id='play' disabled class="btn btn-primary" onclick="getValue();" data-toggle="popover"
+                        title="Error.." data-placement="bottom" data-content="請選擇集數～～～">  
+                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="w-75 p-3 mx-auto">
+            <div class="translate-middle">
+                <table class="table table-border ">
+
+                    <div class="list-group">
+                        <a href="#" onclick="ModalToggleV1();" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">第一季</h5>
+                                <small>1 - 201 集</small>
+                            </div>
+                            <p class="mb-1 text-center fst-italic text-success">列表請點我</p>
+                        </a>
+                        <a href="#" onclick="ModalToggleV2();" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">第二季</h5>
+                                <small>202 - 265 集</small>
+                            </div>
+                            <p class="mb-1 text-center fst-italic text-danger">列表請點我</p>
+                        </a>
+                        <a href="#" onclick="ModalToggleV3();" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">第三季</h5>
+                                <small>266 - 316 集</small>
+                            </div>
+                            <p class="mb-1 text-center fst-italic text-primary">列表請點我</p>
+                        </a>
+                        <a href="#" onclick="ModalToggleV4();" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">第四季</h5>
+                                <small>317 - 367 集</small>
+                            </div>
+                            <p class="mb-1 text-center fst-italic text-secondary">列表請點我</p>
+                        </a>
+                    </div>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+
+            <!-- modal1 -->
+            <div class="modal fade" id="ModalV1" tabindex="-1" role="dialog" aria-labelledby="cartModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-header" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">內容訊息</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            第一季
+                            <span>[01+02]-[要蓋章之前得先仔細確認好內容]-TV原創劇情1小時SP</span>
+                            <span>自行爬取...</span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal1 -->
+
+            <!-- modal2 -->
+            <div class="modal fade" id="ModalV2" tabindex="-1" role="dialog" aria-labelledby="cartModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-header" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">內容訊息</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            第二季
+                            <span>[202]-[春假過後大家都稍有成熟]-兩年後疣篇(上)</span>
+                            <span>自行爬取...</span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal2 -->
+
+            <!-- modal3 -->
+            <div class="modal fade" id="ModalV3" tabindex="-1" role="dialog" aria-labelledby="cartModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-header" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">內容訊息</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            第三季
+                            <span>[266]-[時間停止不會停在最有甜頭的時候]-時間停止篇(上)</span>
+                            <span>自行爬取...</span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal3 -->
+
+            <!-- modal4 -->
+            <div class="modal fade" id="ModalV4" tabindex="-1" role="dialog" aria-labelledby="cartModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-header" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">內容訊息</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            第四季
+                        <span>[317]-[怪物與怪物之子]-烙陽決戰篇(1)</span>
+                        <span>自行爬取...</span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal4 -->
+
+            <!-- toast -->
+            <div class="toast-container  position-absolute bottom-0 end-0 p-3"
+                style="z-index: 5; right: 5; bottom: 0; min-height: 400px;">
+                <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true"
+                    data-delay="3000">
+                    <div class="toast-header">
+                        <svg class="bd-placeholder-img rounded me-2" width="15" height="15"
+                            xmlns="https://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                            <rect width="100%" height="100%" fill="#00DB00"></rect>
+                        </svg>
+                        <strong class="mr-auto">HowHow</strong>
+                        <small>Now</small>
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="toast-body" id="liveToastV">
+                    </div>
+                </div>
+            </div>
+            <!-- toast -->
+
+
+
+
+            <script>
+                let ModalV1 = new bootstrap.Modal(document.getElementById('ModalV1'));
+                let ModalV2 = new bootstrap.Modal(document.getElementById('ModalV2'));
+                let ModalV3 = new bootstrap.Modal(document.getElementById('ModalV3'));
+                let ModalV4 = new bootstrap.Modal(document.getElementById('ModalV4'));
+                let loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+                let domain = $('#my-domain').data().name
+                getValue = () => {
+                    if (isNaN($('#get-data').val())) {
+                        $('[data-toggle="popover"]').popover('toggle');
+                        setTimeout(function () {
+                            $('[data-toggle="popover"]').popover('hide');
+                        }, 2000);
+                    } else {
+
+                        value = $('#get-data').val();
+                        // console.log(value);
+                        $('#play').text(`發送中..請稍等 ~~`);
+                        $("#liveToastV").text(`${value}集已發送，至line上查看`);
+                        $("#liveToast").toast('show');
+                        $('#play').attr("disabled", true);
+                        let url = `//${domain}/${value}`;
+                        axios
+                            .post(url)
+                            .then(res => {
+                                // $('#play').text(`play`);
+                                console.log('ok');
+                            }).catch(err => {
+                                console.log('伺服器錯誤', err.status);
+                                $('#push').text('伺服器錯誤，請稍後再試');
+                                console.log(err)
+                            }
+                            );
+                        setTimeout(function () {
+                            $('#play').attr("disabled", false);
+                            $('#play').text(`Let's Play ~`);
+                        }, 3000);
+                    }
+                }
+                url = `//${domain}/videos`;
+                console.log("url", url);
+                getData = datas => {
+                    axios
+                        .get(url)
+                        .then(res => {
+                            $('#status').empty();
+                            datas = res.data.Data.Output;
+                            allindex = Object.keys(datas);
+                            allindex.forEach(item => {
+                                const option = `
+                                                <option value='${item}' data-id="d${item}">${item}</option>
+                                                `
+                                $('#get-data').append(option);
+                                $('#play').text(`Let's Play ~`);
+                                $('#play').attr("disabled", false);
+                            })
+
+                        });
+                }
+                $(document).ready(function () {
+                    getData();
+                });
+
+            </script>
+</body>
+
+</html>
