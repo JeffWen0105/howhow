@@ -1,0 +1,9 @@
+pysqlite3 
+loguru
+requests
+bs4
+flask
+flask_restful
+flask_cors
+flask_apscheduler
+gunicorn

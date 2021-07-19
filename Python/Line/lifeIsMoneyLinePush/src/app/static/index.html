@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>LifeMoneyPush APP</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta id="my-domain" data-name="{{ (request.host) }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <!-- bootstrap.js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+  <!-- products.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <link rel="icon" href="/static/balloons.ico">
+  <link rel="stylesheet" href="/static/css/howhow.css">
+</head>
+
+<body id="main">
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">HowHowWen の LifeMoneyPush</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a id="cartNavLink" type="button" class="btn btn-info text-white" href="#main">Top</a>
+        </li>
+        <li class="nav-item">
+          <a id="settingNavLink" type="button" class="btn btn-success text-white" onclick="settingModalToggle();"
+            data-toggle="modal">Setting</a>
+        </li>
+        <li class="nav-item">
+          <a id="schedulerNavLink" type="button" class="btn btn-primary text-white" onclick="schedulerModalToggle();"
+            data-toggle="modal">Scheduler</a>
+        </li>
+        <div>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- toast -->
+  <div class="toast-container  position-absolute bottom-0 end-0 p-3" style="z-index: 5; right: 0; bottom : 0;">
+    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4500">
+      <div class="toast-header">
+        <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#00DB00"></rect>
+        </svg>
+        <strong class="mr-auto">HowHow</strong>
+        <small>Now</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body" id="liveToastV">
+      </div>
+    </div>
+  </div>
+  <!-- toast -->
+
+  <!-- modal -->
+  <div class="modal fade" id="schedulerModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Scheduler</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-border">
+            <thead>
+              <tr>
+                <th class="text-center">Hour</th>
+                <th class="text-center">Minute</th>
+                <th class="text-center">下次執行時間</th>
+              </tr>
+            </thead>
+            <tbody id="schedulerBody"></tbody>
+            <tfoot id="schedulerFoot"></tfoot>
+          </table>
+          <div class="modal-header">
+            <h5 class="modal-title">Setting</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <br>
+          <div id="SchedulerRow">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Hour</label>
+                  <input class="form-control" id="inputHour" placeholder="10" type="text">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Minute</label>
+                  <input class="form-control" id="inputMinute" placeholder="30" class="form-control" type="text">
+                </div>
+              </div>
+              <button type="submit" onclick="postScheduler();" class="btn btn-primary"
+                data-dismiss="modal">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal -->
+
+  <!-- modal -->
+  <div class="modal fade" id="settingModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Setting</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputToken1" class="form-label">Line Bot Token</label>
+              <input type="text" class="form-control" id="exampleInputToken1" aria-describedby="TokenHelp" required>
+              <div id="TokenHelp" class="form-text">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputUID1" class="form-label">Push Line ID</label>
+              <input type="text" class="form-control" id="exampleInputUID1" required>
+            </div>
+            <button onclick="postInfo();" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal -->
+
+  <div id="header" class="jumbotron ">
+    <div class="container">
+      <br>
+      <span class="text-center h2">點我執行程序 ： </span>
+      <button type="button" id="run" class="btn btn-success h4" onclick="startRunning();">Run</button>
+    </div>
+  </div>
+
+  <h2 class="text-center">Logging here : </h2>
+  <div class="row">
+
+    <div class="logging_window">
+      <pre id="output"></pre>
+      {% for i in log %}
+      <p class="alert alert-{{i[1]}}"> {{ i[0] }}</p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <script src="static/js/howhow.js"></script>
+</body>
+
+</html>
