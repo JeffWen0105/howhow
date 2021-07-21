@@ -1,5 +1,7 @@
 FROM python:3.7-alpine3.13
-ENV TZ=Asia/Taipei
+RUN apk add tzdata && cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime \
+    && echo "Asia/Taipei" > /etc/timezone \
+    && apk del tzdata
 RUN adduser -D howhow
 WORKDIR /home/howhow
 COPY requirements.txt .
