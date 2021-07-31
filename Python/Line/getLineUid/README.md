@@ -65,4 +65,5 @@
 
 ##### PS. 本系統程式碼均開源，可以至 HowHow 的 GitHub 下載原始碼
 
+[整包下載請點擊我](https://downgit.github.io/#/home?url=https://github.com/JeffWen0105/howhow/tree/main/Python/Line/getLineUid)
 
