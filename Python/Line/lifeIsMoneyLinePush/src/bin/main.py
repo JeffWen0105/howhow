@@ -22,6 +22,8 @@
 # If not, see <http://www.gnu.org/licenses/>.
 # =======================================================================
 
+import sys
+
 from loguru import logger
 
 import db
@@ -44,12 +46,12 @@ if __name__ == "__main__":
             logger.success("成功推送，請至 Line 上查看～")
         else:
             logger.critical(f"Err: {_}")
-            status = True
+            status = False
     else:
         logger.critical(f"請先建立 Token 及 line push id")
         status = False
     query.close_db()
     if status:
-        exit(0)
+        sys.exit(0)
     else:
-        exit(1)
+        sys.exit(1)

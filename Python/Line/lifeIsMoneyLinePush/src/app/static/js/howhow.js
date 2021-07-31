@@ -6,14 +6,22 @@ startRunning = () => {
     axios
         .get(url)
         .then(() => {
-            location.reload();
             $('#run').text("run");
             $('#run').attr("disabled", false);
+            $("#toast_clo").attr("fill", "#00DB00");
             toastShowLogin(context = "手動執行程序成功，請至Line 上查看~~");
+            setTimeout(function () {
+                location.reload();
+            }, 1000);
         }).catch(
             () => {
-                $('#run').text("Err -> 請先設定Token..");
                 $("#run").addClass("btn btn-danger h4");
+                $('#run').text("Err -> 請先設定Token..");
+                $("#toast_clo").attr("fill", "#EA0000");
+                toastShowLogin(context = "請先完成 Setting 配置 ...");
+                setTimeout(function () {
+                    location.reload();
+                }, 1500);
             }
         );
 }
@@ -25,7 +33,6 @@ getInfo = () => {
             let infos = res.data.Info.output;
             $("#exampleInputToken1").val(infos.Token);
             $("#exampleInputUID1").val(infos.Uid);
-
         }).catch(
             () => {
                 $("#exampleInputToken1").attr("placeholder", "請先設定 Line Bot Token");
@@ -46,8 +53,13 @@ postScheduler = () => {
         axios
             .patch(schedulers_url, schedulers)
             .then(() => {
+                $("#toast_clo").attr("fill", "#00DB00");
                 toastShowLogin(context = "設定自動執行排程成功～～");
-            }).catch(err => console.log(err));
+            }).catch(err => {
+                console.log(err)
+                $("#toast_clo").attr("fill", "#EA0000");
+                toastShowLogin(context = "排程設定有誤，請重新執行設定 ...");
+            });
 
     };
 }
@@ -62,8 +74,13 @@ postInfo = () => {
         axios
             .post(info_url, infos)
             .then(() => {
+                $("#toast_clo").attr("fill", "#00DB00")
                 toastShowLogin(context = "設定 Line Bot Token 及 Uid 成功 ~~");
-            }).catch(err => console.log(err));
+            }).catch(err => {
+                console.log(err);
+                $("#toast_clo").attr("fill", "#EA0000");
+                toastShowLogin(context = "設定失敗，請重新執行設定 ...");
+            });
     }
 }
 let settingModal = new bootstrap.Modal(document.getElementById('settingModal'));

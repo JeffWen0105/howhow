@@ -90,5 +90,5 @@ class PttCrawler:
             get_times += 1
         if len(self.title) == 0 or self.url == 0:
             logger.critical("解析資料失敗，強制停止程序...")
-            sys.exit()
+            sys.exit(1)
         return self.title , self.url

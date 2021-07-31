@@ -86,7 +86,7 @@ def flask_logger():
                     category = "dark"
                     yield data, category
             i += 1
-            if i > 15:
+            if i > 10:
                 break
 
 @scheduler.task('cron', id='life_money', minute='30', hour='10')
