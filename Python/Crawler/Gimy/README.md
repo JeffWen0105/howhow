@@ -39,4 +39,15 @@
 ![](https://i.imgur.com/Du9Jc17.png)
 
 
+---
+
+
+
+[![](https://i.imgur.com/sgdmN00.png)](https://buymeacoffee.com/jeffwen0105)
+如果覺得內容還不錯，請我喝杯咖啡吧～
+
+
+---
+
+
 <font size="1"><I><b>注： 此工具僅供教學用途，請於下載影片連結後24小時內刪除，請勿用於商業目的；若有版權問題，使用者必須自行負責。</b></I></font>

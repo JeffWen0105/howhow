@@ -101,3 +101,11 @@ docker run -d -p 5000:5000 jeffwen0105/life_money_line_push:0.1
 * 設定排程 DEMO
 
 ![](https://i.imgur.com/4HmZQPc.png)
+
+
+---
+
+
+
+[![](https://i.imgur.com/sgdmN00.png)](https://buymeacoffee.com/jeffwen0105)
+如果覺得內容還不錯，請我喝杯咖啡吧～

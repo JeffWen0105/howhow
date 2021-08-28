@@ -67,3 +67,10 @@
 
 [整包下載請點擊我](https://downgit.github.io/#/home?url=https://github.com/JeffWen0105/howhow/tree/main/Python/Line/getLineUid)
 
+
+---
+
+
+
+[![](https://i.imgur.com/sgdmN00.png)](https://buymeacoffee.com/jeffwen0105)
+如果覺得內容還不錯，請我喝杯咖啡吧～

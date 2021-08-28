@@ -15,3 +15,9 @@
 3. 執行: sh start_promtail.sh 就會開始發送數據
 ```
 
+---
+
+
+
+[![](https://i.imgur.com/sgdmN00.png)](https://buymeacoffee.com/jeffwen0105)
+如果覺得內容還不錯，請我喝杯咖啡吧～
