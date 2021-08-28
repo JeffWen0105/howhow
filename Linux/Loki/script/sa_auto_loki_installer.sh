@@ -24,7 +24,7 @@ function check_release(){
 function docker_check(){
   sudo docker ps > /dev/null
   [[ "$?" == "1" ]] && log_info "啟動Docker Server" && sudo systemctl start docker
-  [[ "$?" == "127" ]] && docker_installer
+  [[ "$?" == "5" ]] && docker_installer
   sudo docker-compose --help > /dev/null
   [[ "$?" == "1" ]] && docker_compose_installer
 }
