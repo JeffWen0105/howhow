@@ -74,10 +74,10 @@ class ApiBackUP():
             self.order_col = '$update_time'
         elif self.types == 'events':
             self.sql_type = 'events'
-            self.format_type = 'events'
+            self.format_type = 'event'
             self.order_col = 'date'
         elif self.types == 'items':
-            self.sql_type = 'items'
+            self.sql_type = 'item'
             self.format_type = 'items'
             self.order_col = '$update_time'
         total = self.get_counts()
