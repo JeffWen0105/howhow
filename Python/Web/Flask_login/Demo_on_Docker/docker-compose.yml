@@ -1,0 +1,22 @@
+version: '2.2'
+
+services:
+  db:
+    image: mariadb
+    ports: 
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./SRC/DB:/docker-entrypoint-initdb.d
+
+  adminer:
+    image: adminer
+    ports:
+      - 3307:8080
+
+  web:
+    build: .
+    ports:
+      - 5000:5000
+    
