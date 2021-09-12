@@ -66,6 +66,32 @@ python3 app.py
 
 ---
 
+### Docker 快速部署 DEMO
+
+
+1. 一鍵式快速部署
+
+![](https://i.imgur.com/SCQI8dR.png)
+
+
+2. DB管理介面
+
+![](https://i.imgur.com/g33nswd.png)
+
+3. Docker-compose 彈性 Yaml 自行配置
+
+
+
+![](https://i.imgur.com/JzcpayJ.png)
+
+4. Dockerfile 免去安裝套件環境問題
+
+![](https://i.imgur.com/fcIxnVC.png)
+
+
+
+---
+
 ### 方案二(使用HowHow 的 DB)：
 
 * 需具備 Docker 及 Docker-compose ， [安裝方式請參閱HowHow官網](https://jeffwen0105.com/dokcer-%e8%b2%a8%e6%ab%83%e5%ae%b9%e5%99%a8%e5%85%a9%e4%b8%89%e4%ba%8b/)
@@ -128,3 +154,9 @@ docker-compose up
 
 
 * 更詳細操作步驟[請參閱HowHowWen官網](https://jeffwen0105.com/python-%E4%BD%BF%E7%94%A8flask-%E8%A3%BD%E4%BD%9C%E7%B0%A1%E5%96%AE%E7%9A%84%E7%99%BB%E5%85%A5%E5%8F%8A%E7%99%BB%E5%87%BA%E7%B6%B2%E7%AB%99/)
+
+
+---
+
+[![](https://i.imgur.com/sgdmN00.png)](https://buymeacoffee.com/jeffwen0105)
+如果覺得內容還不錯，請我喝杯咖啡吧～
