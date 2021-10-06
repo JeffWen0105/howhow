@@ -1,0 +1,69 @@
+2021-10-05 20:27:39.104 | CRITICAL | query:request:35 - ERR: HTTPConnectionPool(host='%7buri%7d', port=8107): Max retries exceeded with url: /api/sql/query?token=%7Btoken%7D&project=%7Bproject%7D (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fee3674d310>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2021-10-05 20:27:39.140 | CRITICAL | query:request:35 - ERR: HTTPConnectionPool(host='%7buri%7d', port=8107): Max retries exceeded with url: /api/sql/query?token=%7Btoken%7D&project=%7Bproject%7D (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fee3674d2e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2021-10-05 20:28:43.905 | CRITICAL | query:request:35 - ERR: HTTPConnectionPool(host='%7buri%7d', port=8107): Max retries exceeded with url: /api/sql/query?token=%7Btoken%7D&project=%7Bproject%7D (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbdc70b2310>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2021-10-05 20:28:43.917 | CRITICAL | query:request:35 - ERR: HTTPConnectionPool(host='%7buri%7d', port=8107): Max retries exceeded with url: /api/sql/query?token=%7Btoken%7D&project=%7Bproject%7D (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbdc70b22e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2021-10-05 20:28:51.680 | CRITICAL | query:request:35 - ERR: HTTPConnectionPool(host='%7buri%7d', port=8107): Max retries exceeded with url: /api/sql/query?token=%7Btoken%7D&project=%7Bproject%7D (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f810a683310>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2021-10-05 20:28:51.691 | CRITICAL | query:request:35 - ERR: HTTPConnectionPool(host='%7buri%7d', port=8107): Max retries exceeded with url: /api/sql/query?token=%7Btoken%7D&project=%7Bproject%7D (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f810a6832e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2021-10-05 20:29:26.709 | CRITICAL | query:request:35 - ERR: HTTPConnectionPool(host='%7buri%7d', port=8107): Max retries exceeded with url: /api/sql/query?token=%7Btoken%7D&project=%7Bproject%7D (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff2596732e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2021-10-05 20:29:26.721 | CRITICAL | query:request:35 - ERR: HTTPConnectionPool(host='%7buri%7d', port=8107): Max retries exceeded with url: /api/sql/query?token=%7Btoken%7D&project=%7Bproject%7D (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff2596732b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2021-10-05 20:30:03.051 | INFO     | query:request:33 - 
+2021-10-05 20:30:05.100 | INFO     | query:request:33 - 
+2021-10-05 20:34:09.729 | INFO     | query:request:33 - {"type":"track","event":"cartNO4_click","time_free":true,"time":1631886918303,"distinct_id":"17bf409c15db16-05ca0f977e35848-9221d1d-250125-17bf409c15f513","properties":{"$os":"iOS","$ip":"125.227.38.20","$screen_height":667,"title":"產品四","price":220,"$province":"台湾","$latest_search_keyword":"未取到值_直接打开","$url":"https://www.sensorsdata.tw:80/shopping#access_token=eyJhbGciOiJIUzI1NiJ9.4TGLQZTLKlBqIzp_JKyge66WmiKGibtOMGwDQHd3zqrYEHIXNWjnexKsIGizGkYt05gLxTZgxjWpY39Eh-w58zd-Qp1o3ZTIMUZHlvQGPL66NNsgIjG3g_y1o6TRr9oH.MhoK1kUhpHPZq0SyTPvxJd1mBVA3yXdEJyqXyXpGzsU&context_token=eyJraWQiOiI5YTZmZDhjYS0zNThkLTRkM2YtOTcyNy0yNGY0Njc0OWQ0MDEiLCJhbGciOiJFUzI1NiJ9.eyJ0eXBlIjoidXRvdSIsInV0b3VJZCI6IlVVZTE0MTY4NTM4M2E0MmQ1Y2QwZWM0M2QxM2UzMDU3ZDk2ZGM2Y2FhNjMyZTQ0OWIyMzVlMzZlODZhZWM3NGEzNDliNGUyMDZiMTYwNjJhMjYxYjFjMzc3OWZmMThjZWNlMDE3NDZlNWY0ZjRlZGY4NzcyMzUyZTQxZDBkYTZhYmMiLCJ1c2VySWQiOiJVNGQ3NDY2OGM0ODgzOTIzOGU3ZWRhOTY5NWMwMTI0MjgiLCJ2aWV3VHlwZSI6InRhbGwiLCJlbmRwb2ludFVybCI6Imh0dHBzOi8vd3d3LnNlbnNvcnNkYXRhLnR3OjgwL3Nob3BwaW5nIiwiYWNjZXNzVG9rZW5IYXNoIjoiOG9jT2x1cklFUjEzUmxZWEJQVGRJZyIsImF2YWlsYWJpbGl0eSI6eyJzaGFyZVRhcmdldFBpY2tlciI6eyJwZXJtaXNzaW9uIjp0cnVlLCJtaW5WZXIiOiIxMC4zLjAifSwibXVsdGlwbGVMaWZmVHJhbnNpdGlvbiI6eyJwZXJtaXNzaW9uIjp0cnVlLCJtaW5WZXIiOiIxMC4xOC4wIn0sInN1YndpbmRvd09wZW4iOnsicGVybWlzc2lvbiI6ZmFsc2UsIm1pblZlciI6IjExLjcuMCJ9LC$","$latest_referrer":"","$url_host":"www.sensorsdata.tw","$kafka_offset":2979503100,"$os_version":"14.7.1","amount":4,"$receive_time":1631886918397,"$is_first_day":false,"$city":"台北","$model":"iPhone","$screen_width":375,"$browser":"Mobile Safari","$lib":"js","$country":"中国","$title":"神策數據 購物車","$lib_version":"1.16.13","$timezone_offset":-480,"$latest_traffic_source_type":"直接流量","$is_login_id":false,"$manufacturer":"Apple"}}
+{"type":"track","event":"cartNO4_click","time_free":true,"time":1631886919123,"distinct_id":"17bf409c15db16-05ca0f977e35848-9221d1d-250125-17bf409c15f513","properties":{"$os":"iOS","$ip":"125.227.38.20","$screen_height":667,"title":"產品四","price":220,"$province":"台湾","$latest_search_keyword":"未取到值_直接打开","$url":"https://www.sensorsdata.tw:80/shopping#access_token=eyJhbGciOiJIUzI1NiJ9.4TGLQZTLKlBqIzp_JKyge66WmiKGibtOMGwDQHd3zqrYEHIXNWjnexKsIGizGkYt05gLxTZgxjWpY39Eh-w58zd-Qp1o3ZTIMUZHlvQGPL66NNsgIjG3g_y1o6TRr9oH.MhoK1kUhpHPZq0SyTPvxJd1mBVA3yXdEJyqXyXpGzsU&context_token=eyJraWQiOiI5YTZmZDhjYS0zNThkLTRkM2YtOTcyNy0yNGY0Njc0OWQ0MDEiLCJhbGciOiJFUzI1NiJ9.eyJ0eXBlIjoidXRvdSIsInV0b3VJZCI6IlVVZTE0MTY4NTM4M2E0MmQ1Y2QwZWM0M2QxM2UzMDU3ZDk2ZGM2Y2FhNjMyZTQ0OWIyMzVlMzZlODZhZWM3NGEzNDliNGUyMDZiMTYwNjJhMjYxYjFjMzc3OWZmMThjZWNlMDE3NDZlNWY0ZjRlZGY4NzcyMzUyZTQxZDBkYTZhYmMiLCJ1c2VySWQiOiJVNGQ3NDY2OGM0ODgzOTIzOGU3ZWRhOTY5NWMwMTI0MjgiLCJ2aWV3VHlwZSI6InRhbGwiLCJlbmRwb2ludFVybCI6Imh0dHBzOi8vd3d3LnNlbnNvcnNkYXRhLnR3OjgwL3Nob3BwaW5nIiwiYWNjZXNzVG9rZW5IYXNoIjoiOG9jT2x1cklFUjEzUmxZWEJQVGRJZyIsImF2YWlsYWJpbGl0eSI6eyJzaGFyZVRhcmdldFBpY2tlciI6eyJwZXJtaXNzaW9uIjp0cnVlLCJtaW5WZXIiOiIxMC4zLjAifSwibXVsdGlwbGVMaWZmVHJhbnNpdGlvbiI6eyJwZXJtaXNzaW9uIjp0cnVlLCJtaW5WZXIiOiIxMC4xOC4wIn0sInN1YndpbmRvd09wZW4iOnsicGVybWlzc2lvbiI6ZmFsc2UsIm1pblZlciI6IjExLjcuMCJ9LC$","$latest_referrer":"","$url_host":"www.sensorsdata.tw","$kafka_offset":2979503300,"$os_version":"14.7.1","amount":4,"$receive_time":1631886919215,"$is_first_day":false,"$city":"台北","$model":"iPhone","$screen_width":375,"$browser":"Mobile Safari","$lib":"js","$country":"中国","$title":"神策數據 購物車","$lib_version":"1.16.13","$timezone_offset":-480,"$latest_traffic_source_type":"直接流量","$is_login_id":false,"$manufacturer":"Apple"}}
+
+2021-10-05 20:34:11.446 | INFO     | query:request:33 - {"type":"track","event":"StickerMessage","time_free":true,"time":1621786257199,"distinct_id":"U4d74668c48839238e7eda9695c012428","properties":{"line_sticker_id":"35","$receive_time":1622819301409,"$ip":"null","$lib":"python","line_package_id":"2","$lib_version":"1.10.2","$kafka_offset":2207396002,"$is_login_id":false}}
+{"type":"track","event":"StickerMessage","time_free":true,"time":1621786257568,"distinct_id":"U4d74668c48839238e7eda9695c012428","properties":{"line_sticker_id":"35","$receive_time":1622819301409,"$ip":"null","$lib":"python","line_package_id":"2","$lib_version":"1.10.2","$kafka_offset":2207396102,"$is_login_id":false}}
+{"type":"track","event":"StickerMessage","time_free":true,"time":1621786258088,"distinct_id":"U4d74668c48839238e7eda9695c012428","properties":{"line_sticker_id":"35","$receive_time":1622819301409,"$ip":"null","$lib":"python","line_package_id":"2","$lib_version":"1.10.2","$kafka_offset":2207396202,"$is_login_id":false}}
+{"type":"track","event":"StickerMessage","time_free":true,"time":1621786258899,"distinct_id":"U4d74668c48839238e7eda9695c012428","properties":{"line_sticker_id":"35","$receive_time":1622819301409,"$ip":"null","$lib":"python","line_package_id":"2","$lib_version":"1.10.2","$kafka_offset":2207396302,"$is_login_id":false}}
+{"type":"track","event":"StickerMessage","time_free":true,"time":1621822732482,"distinct_id":"U4d74668c48839238e7eda9695c012428","properties":{"line_sticker_id":"153345","$receive_time":1622819301409,"$ip":"null","$lib":"python","line_package_id":"2000006","$lib_version":"1.10.2","$kafka_offset":2207397302,"$is_login_id":false}}
+
+2021-10-06 11:41:55.690 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:41:57.487 | CRITICAL | query:request:40 - ERR: [Errno 2] No such file or directory: 'output/event_1.json' ; SQL syntax: select * from events where event='cartNO4_click'  limit 20
+2021-10-06 11:41:57.488 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:41:59.021 | CRITICAL | query:request:40 - ERR: [Errno 2] No such file or directory: 'output/event_2.json' ; SQL syntax: select * from events where event='StickerMessage' and date>='2021-05-01' limit 5
+2021-10-06 11:41:59.022 | SUCCESS  | query:get_event:53 - Event Done ~
+2021-10-06 11:41:59.022 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:41:59.117 | CRITICAL | query:request:40 - ERR: [Errno 2] No such file or directory: 'output/profile_1.json' ; SQL syntax: select * from user limit 10
+2021-10-06 11:41:59.118 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:41:59.328 | CRITICAL | query:request:40 - ERR: [Errno 2] No such file or directory: 'output/profile_2.json' ; SQL syntax: select * from user name is not null limit 10
+2021-10-06 11:41:59.328 | SUCCESS  | query:get_user:66 - Profile Done ~
+2021-10-06 11:42:30.293 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:42:31.994 | CRITICAL | query:request:40 - ERR: [Errno 2] No such file or directory: '../output/event_1.json' ; SQL syntax: select * from events where event='cartNO4_click'  limit 20
+2021-10-06 11:42:31.994 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:42:33.789 | CRITICAL | query:request:40 - ERR: [Errno 2] No such file or directory: '../output/event_2.json' ; SQL syntax: select * from events where event='StickerMessage' and date>='2021-05-01' limit 5
+2021-10-06 11:42:33.790 | SUCCESS  | query:get_event:53 - Event Done ~
+2021-10-06 11:42:33.791 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:42:33.991 | CRITICAL | query:request:40 - ERR: [Errno 2] No such file or directory: '../output/profile_1.json' ; SQL syntax: select * from user limit 10
+2021-10-06 11:42:33.991 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:42:34.203 | CRITICAL | query:request:40 - ERR: [Errno 2] No such file or directory: '../output/profile_2.json' ; SQL syntax: select * from user name is not null limit 10
+2021-10-06 11:42:34.204 | SUCCESS  | query:get_user:66 - Profile Done ~
+2021-10-06 11:42:41.289 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:42:43.023 | INFO     | query:request:37 - Saveing -> output/event_1.json
+2021-10-06 11:42:43.024 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:42:44.789 | INFO     | query:request:37 - Saveing -> output/event_2.json
+2021-10-06 11:42:44.789 | SUCCESS  | query:get_event:53 - Event Done ~
+2021-10-06 11:42:44.789 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:42:45.017 | INFO     | query:request:37 - Saveing -> output/profile_1.json
+2021-10-06 11:42:45.018 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:42:45.258 | INFO     | query:request:37 - Saveing -> output/profile_2.json
+2021-10-06 11:42:45.258 | SUCCESS  | query:get_user:66 - Profile Done ~
+2021-10-06 11:43:21.273 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:43:22.846 | INFO     | query:request:37 - Saveing -> output/event_1.json
+2021-10-06 11:43:22.847 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:43:24.478 | INFO     | query:request:37 - Saveing -> output/event_2.json
+2021-10-06 11:43:24.478 | SUCCESS  | query:get_event:53 - Event Done ~
+2021-10-06 11:43:24.478 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:43:25.200 | INFO     | query:request:37 - Saveing -> output/profile_1.json
+2021-10-06 11:43:25.200 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:43:25.400 | INFO     | query:request:37 - Saveing -> output/profile_2.json
+2021-10-06 11:43:25.401 | SUCCESS  | query:get_user:66 - Profile Done ~
+2021-10-06 11:43:44.921 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:43:46.651 | INFO     | query:request:37 - Saveing -> output/event_1.json
+2021-10-06 11:43:46.651 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:43:48.441 | INFO     | query:request:37 - Saveing -> output/event_2.json
+2021-10-06 11:43:48.441 | SUCCESS  | query:get_event:53 - Event Done ~
+2021-10-06 11:43:48.442 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:43:49.261 | INFO     | query:request:37 - Saveing -> output/profile_1.json
+2021-10-06 11:43:49.262 | INFO     | query:request:28 - RUNNING: {sql}
+2021-10-06 11:43:50.080 | INFO     | query:request:37 - Saveing -> output/profile_2.json
+2021-10-06 11:43:50.080 | SUCCESS  | query:get_user:66 - Profile Done ~
