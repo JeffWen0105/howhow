@@ -2,7 +2,7 @@
 
 # Python - Line Notify (含註冊教學) + Python API 串接
 
-
+#### 想要有可以提醒自己的機器人嗎? 現在就讓 HowHow 手把手教你如何建立屬於自己的通知推播機器人八 ~~
 
 ### Line Notify 使用步驟
 
