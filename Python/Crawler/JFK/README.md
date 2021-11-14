@@ -26,13 +26,16 @@
 ### ~~~~ Source Code 打包[下載請點我](https://downgit.github.io/#/home?url=https://github.com/JeffWen0105/howhow/tree/main/Python/Crawler/JFK) ~~~~
 
 
+### 更多詳細內容請至 HowHow 的官網查看， [點擊我觀看更多](https://jeffwen0105.com/python_crawler_jkf/)
+
+
 ---
 
 ### 使用方式：
 
 ```
 1. 推薦快速方案 ： Docker 一鍵快速建置方案，如不知道什麼是 Docker那一定要點擊下方的 HowHow Docker 教學 ~
-2. 自行部署方案 ： 需自行下載原始碼，並且需要自備 MongoDB 才能使用，且設定檔配置請參考下方說明 。
+2. 自行部署方案 ： 需自行下載原始碼，並且需要自備 MongoDB 才能使用，且設定檔配置請參考 HowHow 官網說明，將有更多內容。
 ```
 
 
@@ -98,6 +101,11 @@ docker-compose exec app sh getData.sh 1
 
 
 8. 如上述資料都已經正確如庫，可以透過 排程工具 (Linux crontab、Windows工作排程器等) 每天執行該腳本，如該有更新資料將會自動寫入庫內
+
+
+### 自行部署使用方式:
+
+＊ 詳細內容請至 HowHow 的官網查看， [點擊我觀看更多](https://jeffwen0105.com/python_crawler_jkf/)
 
 
 [![](https://i.imgur.com/sgdmN00.png)](https://buymeacoffee.com/jeffwen0105)
