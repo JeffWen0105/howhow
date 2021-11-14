@@ -1,5 +1,3 @@
-###### tags: `Python`
-
 # Python - Line Notify (含註冊教學) + Python API 串接
 
 #### 想要有可以提醒自己的機器人嗎? 現在就讓 HowHow 手把手教你如何建立屬於自己的通知推播機器人八 ~~
@@ -122,7 +120,7 @@ if __name__ == "__main__":
 
 #### 上述步驟是不是非常簡單呢？？快點手刀操作創建自己的 Line 推播機器人八
 
-* 相關程式碼可至 GitHub 下載，整包打包下載連結請點我
+* 相關程式碼可至 GitHub 下載，整包打包[下載連結請點我](https://downgit.github.io/#/home?url=https://github.com/JeffWen0105/howhow/tree/main/Python/Line/LineNotifyExample)
 
 ---
 
