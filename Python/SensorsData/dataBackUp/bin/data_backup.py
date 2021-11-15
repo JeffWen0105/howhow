@@ -78,10 +78,10 @@ class ApiBackUP():
             self.order_col = 'date'
         elif self.types == 'items':
             self.sql_type = 'item'
-            self.format_type = 'items'
+            self.format_type = 'item'
             self.order_col = '$update_time'
         total = self.get_counts()
-        self.my_times = 1000000
+        self.my_times = 3000000
         self.times = math.ceil(total / self.my_times)
         logger.info(f"每一次查詢 {self.my_times:,} 筆, 需執行 {self.times:,} 次API查詢")
         self.get_data()

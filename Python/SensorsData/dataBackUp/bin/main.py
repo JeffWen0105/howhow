@@ -29,7 +29,7 @@ if __name__ == '__main__':
     args = argParse()
     tables = ['events','users','items']
     if args.tables in tables: 
-        logger.add(f"{root_path}/../log/adCostMaker.log", rotation="100 MB",level="INFO")
+        logger.add(f"{root_path}/../log/dataBackUp.log", rotation="400 MB",level="INFO")
         token = my_utily.TokenGetter().get_token()
         data = data_backup.ApiBackUP()
         data.types = args.tables
