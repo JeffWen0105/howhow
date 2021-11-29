@@ -27,6 +27,7 @@ import copy
 import time
 import hashlib
 import argparse
+import datetime
 
 import requests
 from loguru import logger
@@ -72,6 +73,14 @@ class JkfGetting():
         small_urls_list = [domain + i.get("href")
                            for i in soup.select(".xw0 a")]
         small_title_list = [i.get("title") for i in soup.select(".xw0 a")]
+        small_date_list = [ i.get("title") for i in soup.select(".xs0 + .xs0 span")]
+        # 日期判斷
+        if len(small_date_list) != len(small_title_list):
+            [
+                small_date_list.append(i.text)
+                for i in soup.select(".xs0 + .xs0")
+                if "天前" not in i.text
+            ]
         hash_ids_list = []
         for i in small_title_list:
             hash_object = hashlib.sha256(bytes(i, 'UTF-8'))
@@ -81,21 +90,25 @@ class JkfGetting():
             url_list=small_urls_list,
             title_list=small_title_list,
             hash_id_list=hash_ids_list,
-            img_list=small_imgs_list
+            img_list=small_imgs_list,
+            date_list=small_date_list
         )
         logger.info(f"Get Data count(1) -> {len(data)}")
         return data
 
     @logger.catch
-    def make_dict(self, url_list, title_list, hash_id_list, img_list):
+    def make_dict(self, url_list, title_list, hash_id_list, img_list, date_list):
         data = []
         _ = 0
+        c  = lambda s: datetime.datetime.strptime(s, '%Y-%m-%d')
         while _ < len(hash_id_list):
             data.append({
                 "hashId": hash_id_list[_],
                 "title": title_list[_],
                 "img": img_list[_],
-                "url": url_list[_]
+                "url": url_list[_],
+                'dateTime':  c(date_list[_]),
+                'createdAt' : datetime.datetime.now()
             })
             _ += 1
         return data
@@ -125,7 +138,11 @@ def start(pages):
 def insert_data_fun(data):
     try:
         for i in data:
-            collection.insert_one(i)
+            try:
+                collection.insert_one(i)
+                logger.success(f"{i}")
+            except Exception as _:
+                logger.debug(f"ERR {_}")
     except Exception as _:
         print(_)
 
