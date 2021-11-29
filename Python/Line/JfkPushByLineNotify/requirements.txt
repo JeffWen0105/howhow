@@ -1,0 +1,4 @@
+requests
+loguru
+bs4
+pymongo
