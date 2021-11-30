@@ -53,15 +53,18 @@
 
 * 主目錄
 
-![](https://i.imgur.com/St6bxnZ.png)
+![](https://i.imgur.com/bACOTyj.png)
+
 
 ```
 1. src： 應用主程式
-2. log : 程式日誌輸入位置
-3. requirement.txt : python3 所需要的lib
-4. Dockerfile : 建置本地 image
+2. requirements.txt : python3 所需要的lib
+3. Dockerfile : 建置本地 image
 4. docker-compose.yml : Docker 主要執行入口
 ```
+
+![](https://i.imgur.com/E3CpHsA.png)
+
 
 *  src 核心目錄
 
@@ -75,9 +78,13 @@
 7. db.py : SQLite 封裝控制程序
 8. myPyMongo.py : Mongo 封裝控制程序
 9. app.py ： Web 應用程式
-10. startup.sh ： 容器主程序啟動的入口
+10. startup.sh ： 主程序啟動的入口
 ```
 
+
+* GitHub 上查看原始碼連結[請點我](https://github.com/JeffWen0105/howhow/tree/main/Python/Web/JFKapp)
+
+* 整包打包下載[請點我](https://downgit.github.io/#/home?url=https://github.com/JeffWen0105/howhow/tree/main/Python/Web/JFKapp)
 
 
 ### Docker 使用方式
@@ -155,7 +162,7 @@ docker-compose exec web sh getData.sh 1
 3. 具備 JKF 會員
 ```
 
-1. 下載原始碼，整包[下載請點我](https://downgit.github.io/#/)
+1. 下載原始碼，整包[下載請點我](https://downgit.github.io/#/home?url=https://github.com/JeffWen0105/howhow/tree/main/Python/Web/JFKapp)
 
 2. 解開原始碼包後，透過 pip 安裝 Python所需套件
 
