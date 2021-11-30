@@ -1,0 +1,20 @@
+version: '2.2'
+
+services:
+  howhowmongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+
+  web:
+    build: .
+    ports:
+      - 5858:5000
+
+    environment:
+      - userName=howhow
+      - userPasswd=800105
+      - LineToken=YOUR_LINE_TOKEN
+      - myMongoIP=howhowmongo
+      - JKFcookie=YOUR_JFK_COOKIES

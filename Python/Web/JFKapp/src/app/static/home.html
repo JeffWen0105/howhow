@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="my-domain" data-name="{{ (request.host) }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowHow Beauty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="static/image/sex.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <link rel="stylesheet" href="/static/css/howhow.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="px-3 py-2 bg-dark text-white">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="#"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        HowHowWen の Beauty Picture System
+                    </a>
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                        <li>
+                            <a href="{{ url_for('logout') }}" class="nav-link text-white" type="button" id='logout'>
+                                <span id="detailNavLinkNumber"
+                                    class=" position-absolute translate-middle badge border border-light rounded-circle bg-danger "></span>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="px-3 py-2 border-bottom mb-3">
+            <div class="container d-flex flex-wrap justify-content-center">
+                <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+                </form>
+
+                <div class="text-end">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- navbar end -->
+    <!-- header -->
+    {% if session['name'] %}
+    <!-- bar start-->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+            <path
+                d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+            <path fill-rule="evenodd"
+                d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0zM11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z" />
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M11.854 3.646a.5.5 0 0 1 0 .708L8.207 8l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0zM4.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5z" />
+        </symbol>
+    </svg>
+    <div id='HowHowBar' class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4rem;">
+        <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <li>
+                <a id='reloadME' onclick="reload();" class="nav-link py-3 border-bottom" title="刷新回首頁"
+                    data-bs-toggle="tooltip" data-bs-placement="right">
+                    <svg class="bi" width="24" height="24" role="img">
+                        <use xlink:href="#speedometer2" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a id='addME' onclick="add();" class="nav-link py-3 border-bottom" title="下一頁" data-bs-toggle="tooltip"
+                    data-bs-placement="right">
+                    <svg class="bi" width="24" height="24" role="img">
+                        <use xlink:href="#table" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a id='subtractME' onclick="subtract();" class="nav-link py-3 border-bottom" title="上一頁"
+                    data-bs-toggle="tooltip" data-bs-placement="right">
+                    <svg class="bi" width="24" height="24" role="img">
+                        <use xlink:href="#grid" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- bar END -->
+
+
+    <!-- header end -->
+
+    <!-- productSection -->
+    <section id="productSection" class="py-5">
+        <div class="container">
+            <h1 id=idsList class="text-center mb-5">美女圖列表</h1>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">降逆排序</label>
+            </div>
+            <div id="productRow" class="row"></div>
+        </div>
+    </section>
+    <!-- productSection -->
+
+    <!-- Success Toast Start -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 7000">
+        <div id="liveToast" class="toast fade hide" role="alert" aria-live="assertive" aria-atomic="true"
+            data-bs-delay="4500">
+            <div class="toast-header">
+                <svg class="bd-placeholder-img rounded me-2" width="15" height="15" xmlns="https://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#00DB00"></rect>
+                </svg>
+                <strong class="me-auto">HowHow</strong>
+                <small class="text-muted">1 sec ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                透過 LINE Notify 訊息發送 $囧rz....<br>
+                美女圖請移至 Line 群組上查看唷 ～～
+            </div>
+        </div>
+    </div>
+    <!-- Toast END -->
+
+    <!-- Failed Toast Start -->
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 7000">
+        <div id="liveToastFailed" class="toast fade hide" role="alert" aria-live="assertive" aria-atomic="true"
+            data-bs-delay="4500">
+            <div class="toast-header">
+                <svg class="bd-placeholder-img rounded me-2" width="15" height="15" xmlns="https://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#db0000"></rect>
+                </svg>
+                <strong class="me-auto">HowHow</strong>
+                <small class="text-muted">1 sec ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                伺服器忙碌中，囧rz..<br>
+                機器人也是人，請晚一點再執行 ～～
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let sessionName = "{{ session['name'] }}";
+    </script>
+    <script src="/static/js/howhow.js"></script>
+
+    {% else %}
+    <script src="/static/js/login.js"></script>
+
+    <!-- Failed Toast Start -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 7000">
+        <div id="loginFailed" class="toast fade hide" role="alert" aria-live="assertive" aria-atomic="true"
+            data-bs-delay="8000">
+            <div class="toast-header">
+                <svg class="bd-placeholder-img rounded me-2" width="15" height="15" xmlns="https://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#db0000"></rect>
+                </svg>
+                <strong class="me-auto">HowHow</strong>
+                <small class="text-muted">1 sec ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                登入失敗，囧rz...<br>
+                請確認帳號及密碼是否正確 ～～
+            </div>
+        </div>
+    </div>
+    <!-- Toast END -->
+
+    <!-- login start -->
+    <div id="my-status" class="container" data-name="{{ (state) }}">
+        <div class="row justify-content-center ">
+            <div class="col-12">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="p-5 mb-4 bg-light rounded-3 ">
+                        <div class="container-fluid py-5">
+                            <h1 class="display-5 fw-bold">美女圖推播系統 ^_^</h1>
+                            <p class="col-md-12 fs-4">選定您喜歡的美女，點擊後將會把組圖透過Line Notify推送至您設定的群組內 ~~</p>
+                            <form action="{{ url_for('login') }}" method="POST">
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Users</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputEmail3" name="name">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword3" name="password">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login End -->
+    {% endif %}
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+}
+
+#HowHowBar {
+    position: fixed;
+    top: 40%;
+    z-index: 100;
+    right: 0px;
+}
